@@ -3,16 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<title>企服盒登录页面</title>
+		<title>企服盒手机快速注册页面</title>
 		<link rel="stylesheet" href="css/login.css" />
 		<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
 		<script type="text/javascript">
-		$(function(){	
-			$('.login-ul ul li').click(function(){
-				$(this).addClass('hit').siblings().removeClass('hit');
-				$('.panes>div:eq('+$(this).index()+')').show().siblings().hide();	
-			})
-		})
 		$(function  () {
 			//获取短信验证码
 			var validCode=true;
@@ -41,14 +35,11 @@
 	<body>
 		<div class="login-con">
 			<div class="login-top">
-				<p>企服盒欢迎你</p>
+				<p>手机快速注册</p>
 				<a class="top-a" href="#">取消</a>
 			</div>
 			<div class="login-ul">
-				<ul>
-					<li class="hit">账号登录</li>
-					<li>短息验证码登录</li>
-				</ul>
+				
 				<div class="panes">
 					<div class="pane" style="display:block;">
 						<div class="login-name">
@@ -62,18 +53,6 @@
 							<a href="#"><img src="img/login_eye.png" /></a>
 							<p class="err-txta" style="display: block;"></p>
 						</div>
-						<p class="login-wj"><a href="#">忘记密码</a></p>
-						<div class="login-btn">
-							<input type="button" name="" id="" value="登录" />
-						</div>
-						<div class="login-dsf">
-							<p>
-								<span>使用第三方账号登录</span>
-							</p>
-							<a href="#"><img src="img/login_wx.png" /></a>
-						</div>
-					</div>
-					<div class="pane">
 						<div class="login-name">
 							<p class="in-pa in-pb">中国&nbsp;&nbsp;&nbsp;+86</p>
 							<input class="na-inputa" type="tel" name="" id="tela" value="" placeholder="输入手机号"/>
@@ -83,11 +62,8 @@
 							<p class="in-pa">短信验证码</p>
 							<input class="na-inputb" type="tel" name="" id="" value="" />
 							<div class="login-yzm"><a href="#">获取验证码</a></div>
-						</div>
-						<div class="login-btn" style="margin-bottom: 180px; margin-top: 60px;">
-							<input type="button" name="" id="" value="登录" />
-						</div>
-					</div>
+						</div>	
+					</div>	
 				</div>
 				<div class="login-zh">
 					<p>没有账号？</p>
@@ -139,22 +115,7 @@
 				    $('#tel').siblings(".err-txt").css("display","none");
 				}
 			})
-			//验证手机号
-			$('#tela').blur(function(){
-				//先验证手机号是否正确
-				
-				if($.trim($('#tela').val()).length == 0) {
-				    $('#tela').siblings(".err-txt").css("display","block");
-				    $('#tela').siblings(".err-txt").html("手机号不能为空！");
-				    $('#tela').focus();
-				}else if(isPhoneNo($("#tela").val()) == false) {
-				    $('#tela').siblings(".err-txt").css("display","block");
-				    $('#tela').siblings(".err-txt").html("手机号格式不正确，请重新输入！");
-				    $('#tela').focus();
-				}else if(isPhoneNo($("#tel").val()) == true){
-				    $('#tela').siblings(".err-txt").css("display","none");
-				}
-			})
+			
 		</script>
 	</body>
 </html>
