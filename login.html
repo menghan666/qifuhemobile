@@ -114,11 +114,11 @@
 				if($.trim($('#password').val()).length == 0) {
 				    $('#password').siblings(".err-txta").css("display","block");
 				    $('#password').siblings(".err-txta").html("密码为6-20为数字、字母组合");
-				    
+				    $('#password').focus();
 				}else if(isPassword($("#password").val()) == false) {
 				    $('#password').siblings(".err-txta").css("display","block");
 				    $('#password').siblings(".err-txta").html("密码为6-20为数字、字母组合");
-				    
+				    $('#password').focus();
 				}else if(isPassword($("#password").val()) == true){
 				    $('#password').siblings(".err-txta").css("display","none");
 				}
