@@ -7,6 +7,10 @@
 		<link rel="stylesheet" href="css/login.css" />
 		<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
 		<script type="text/javascript">
+			document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   			});
 		$(function  () {
 			//获取短信验证码
 			var validCode=true;
@@ -33,6 +37,7 @@
 		</script>
 	</head>
 	<body>
+	<div class="mui-content">
 		<div class="login-con">
 			<div class="login-top login-topa">
 				<p>手机快速注册</p>
@@ -77,6 +82,7 @@
 				
 			</div>
 		</div>
+	</div>
 		<script type="text/javascript">
 			// 验证手机号
 			function isPhoneNo(phone) {
