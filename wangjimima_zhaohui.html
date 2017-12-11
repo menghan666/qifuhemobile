@@ -6,8 +6,15 @@
 		<title>企服盒忘记密码</title>
 		<link rel="stylesheet" href="css/login.css" />		
 		<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+		<script type="text/javascript">
+			document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   			});
+   		</script>
 	</head>
 	<body>
+	<div class="mui-content">
 		<div class="login-con">
 			<div class="login-top">	
 				<a class="top-aa" href="#"><img src="img/login_fh.png" />返回</a>
@@ -28,6 +35,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 		<script type="text/javascript">
 			// 验证手机号
 			function isPhoneNo(phone) {
