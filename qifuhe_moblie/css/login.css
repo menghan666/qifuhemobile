@@ -1,0 +1,460 @@
+body{ 
+	margin:0 auto; 
+	font-family: "Microsoft YaHei", "SimSun"; 
+	font-size: 1.0rem; 
+	background: #fff;}
+*{ 
+	padding:0px; 
+	margin:0px;
+	}
+a { 
+	text-decoration: none;
+	}
+a img{ 
+	border:0;
+	}
+img{ 
+	border:0;
+	vertical-align:bottom;
+	}
+ul{ 
+	margin:0; 
+	padding:0;
+	}
+li{
+	list-style-type:none;
+	}
+input, button, select, textarea { 
+	outline: none;
+	}
+textarea {
+	resize: none;
+	}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.login-con{
+	width:100%;
+	min-height: 100px;
+	height: auto;
+	overflow: hidden;
+	max-width: 750px;
+	margin: 0 auto;
+}
+.login-top{
+	width:100%;
+	height: 60px;
+	line-height: 60px;
+	position: relative;
+	text-align: center;
+}
+.login-topa{
+	border-bottom: 1px solid #e5e5e5;
+}
+.login-top p{
+	font-size: 1.2rem;
+	color: #333;
+}
+.login-top .top-a{
+	position: absolute;
+	right: 3%;
+	top: 0px;
+	color: #333;
+}
+.login-top .top-aa{
+	position: absolute;
+	left: 3%;
+	top: 0px;
+	color: #333;
+}
+.login-top .top-aa img{
+	float: left;
+	width: 13px;
+	margin: 17px 10px 0 0;
+}
+.login-ul{
+	width:100%;
+	min-height: 100px;
+	height: auto;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.login-ul ul{
+	width:100%;
+	height: 45px;
+	line-height: 45px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.login-ul ul li{
+	float:left;
+	font-size:1.0rem;
+	height:44px;
+	line-height:44px;
+	width:30%;
+	text-align:center;
+	cursor:pointer;
+	background:#fff;
+	margin: 0 10%;
+}
+.login-ul .hit{
+	border-bottom:1px solid #2552d5;
+	cursor:pointer;
+	color:#2552d5;
+}
+.pane{
+	border-top:0;
+	min-height:100px;
+	background-color:#fff;
+	display:none;
+	clear: both;
+	}
+.login-name{
+	width:90%;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 auto;
+	border-bottom:1px solid #e5e5e5;
+	position: relative;
+}
+p.err-txt{
+	position: absolute;
+	top: 110px;
+	color: red;
+	font-size: 0.8rem;
+}
+p.err-txta{
+	position: absolute;
+	top: 60px;
+	color: red;
+	font-size: 0.8rem;
+}
+p.err-txtb{
+	position: absolute;
+	top: 150px;
+	color: red;
+	font-size: 0.8rem;
+}
+p.err-txtc{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	text-align: left;
+	top: 100px;
+	color: red;
+	font-size: 0.8rem;
+}
+.login-name p.in-p{
+	float: left;
+	padding: 0 5% 0 1%;
+}
+.login-name input.na-input{
+	width: 70%;
+	float: left;
+	background: none;
+	border: none;
+	font-size: 1.0rem;
+	font-family: "微软雅黑";
+	line-height: 50px;
+	color: #333;
+}
+.login-name p.in-pa{
+	width:28%;
+	float: left;
+}
+.login-name p.in-pb{
+	color: #00a5d7;
+}
+.login-name input.na-inputa{
+	width: 50%;
+	float: left;
+	background: none;
+	border: none;
+	font-size: 1.0rem;
+	font-family: "微软雅黑";
+	line-height: 50px;
+	color: #333;
+}
+.login-name input.na-inputb{
+	width: 40%;
+	float: left;
+	background: none;
+	border: none;
+	font-size: 1.0rem;
+	font-family: "微软雅黑";
+	line-height: 50px;
+	color: #333;
+}
+.login-yzm{
+	width: 30%;
+	float: right;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: #ff9e00;
+	margin-top: 8px;
+}
+.login-yzm a{
+	color: #FFFFFF;
+	display: block;
+	font-size: 0.9rem;
+}
+.msgs1{
+	background:#e5e5e5;
+	color:#666;
+	}
+.login-name a img{
+	width:25px;
+	float: left;
+	margin: 15px 0 0 5px;
+}
+p.login-wj{
+	width:90%;
+	height: 65px;
+	line-height: 65px;
+	text-align: right;
+	color: #333;
+	margin: 0 auto;
+}
+p.login-wj a{
+	color: #666;
+}
+.login-btn{
+	width:90%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: #e5e5e5;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+.login-btn input{
+	width:100%;
+	font-size: 1.1rem;
+	background: none;
+	border: none;
+	color: #fff;
+}
+.login-dsf{
+	width:90%;
+	min-height: 80px;
+	height: auto;
+	overflow: hidden;
+	margin: 50px auto 10px;
+	text-align: center;
+}
+.login-dsf p{
+	line-height: 50px;
+}
+.login-dsf p span {
+    display: block;     /*设置为块级元素会独占一行形成上下居中的效果*/
+    font-size:1.1rem;
+    color: #999;
+    position: relative;   /*定位横线（当横线的父元素）*/
+}
+.login-dsf p span:before,.login-dsf p span:after {
+    content: '';                 /*CSS伪类用法*/
+    position: absolute;         /*定位背景横线的位置*/
+    top: 25px;
+    background: #999;       /*宽和高做出来的背景横线*/
+    width: 25%;
+    height: 1px;
+}
+.login-dsf p span:before{
+    left: 2%;        /*调整背景横线的左右距离*/
+}
+.login-dsf p span:after {
+    right: 2%;
+}
+.login-dsf a img{
+	width:70px;
+	margin: 15px auto;
+}
+.login-zh{
+	width:90%;
+	min-height: 50px;
+	height: auto;
+	overflow: hidden;
+	margin: 50px auto 10px;
+	text-align: center;
+}
+.login-zh p{
+	color: #ff9e00;
+	line-height: 40px;
+}
+.login-zhsj{
+	width:99%;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #333333;
+	color: #333;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+.login-zhsj a{
+	color: #333;
+}
+p.zc-p{
+	width: 90%;
+	height: 60px;
+	line-height: 60px;
+	color: #333;
+	margin: 30px auto;
+}
+/*忘记密码页面样式*/
+.wjmm-con{
+	width:100%;
+	min-height: 80px;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+}
+.wjmm-con img.wj-login{
+	width:40%;
+	margin: 30px auto;
+}
+.wjmm-con p.wj-p{
+	width:90%;
+	min-height: 40px;
+	height: auto;
+	overflow: hidden;
+	line-height: 40px;
+	margin: 0 auto;
+	color: #333;
+	text-align: left;
+	font-size: 0.9rem;
+	border-bottom: 1px solid #e5e5e5;
+}
+.wjmm-con p.wj-p a{
+	color: #999;
+}
+.wj-mm{
+	width:90%;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 auto;
+	position: relative;
+	border-bottom: 1px solid #e5e5e5;
+}
+.wj-mm input.mm-in{
+	width:100%;
+	height: 50px;
+	line-height: 50px;
+	background: none;
+	border: none;
+	text-align: left;
+	font-size: 0.9rem;
+	color: #666;	
+}
+.wj-mm input.mm-ina{
+	width:60%;
+	height: 50px;
+	line-height: 50px;
+	background: none;
+	border: none;
+	text-align: left;
+	font-size: 0.9rem;
+	color: #666;
+	float: left;
+}
+.wj-mm a{
+	float: right;
+}
+.wj-mm a img{
+	width:60%;
+	float: right;
+	margin-top: 10px;
+}
+.wjmm-btn{
+	width:90%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin: 50px auto;
+	background: #2552d5;
+	border-radius: 8px;
+}
+.wjmm-btn input{
+	width:100%;
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 1.0rem;
+}
+/*联合登陆*/
+.lhdl-con{
+	width:100%;
+	min-height: 100px;
+	height: auto;
+	overflow: hidden;
+	max-width: 750px;
+	margin: 0 auto;
+	text-align: center;
+}
+.lhdl-con img.lh-img{
+	width:25%;
+	margin: 30px auto 15px;
+}
+p.gl-p{
+	width:90%;
+	margin: 0 auto;
+	color: #777;
+	text-align: left;
+	line-height: 40px;
+}
+p.gl-p span{
+	color: #333;
+	font-size: 1.2rem;
+	}
+p.gl-pa{
+	width:90%;
+	margin: 0 auto;
+	color: #333;
+	text-align: left;
+	line-height: 40px;
+}
+p.gl-p img{
+	float: left;
+	margin: 5px 5px 0 0;
+}
+.lhdl-btn{
+	width:90%;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	background: #2552D5;
+	border-radius: 8px;
+	margin: 5px auto;
+}
+.lhdl-btn input{
+	width:100%;
+	background: none;
+	border: none;
+	font-size: 1.0rem;
+	color: #fff;
+}
+.gl-b{
+	width:90%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid #cccccc;
+	border-radius: 8px;
+	margin: 15px auto;
+}
+.gl-b a{
+	color: #666666;
+	display: block;
+}
+p.qfh-zh{
+	width:90%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 120px;
+}
+p.qfh-zh a{
+	color: #333;
+}
