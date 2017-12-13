@@ -1,10 +1,252 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	color: #333;
+	font-size: 14px;
+	background-color: #f8f8f8;
+}
+p{
+	margin-bottom: 0;
+}
+.header_nav,.slider_banner,.classify-list,.hot_tabs,.tool,.open_company{
+	max-width:750px !important;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.margin-top-10{
+	margin-top: 10px;
+}
 .slider_banner{
 	margin-top: 44px;
 }
 .classify-list ul{
+	padding: 10px 10px !important;
 	background-color: #fff !important;
 }
 .classify-list ul li{
 	width: 20%;
 	padding: 0 !important;
+	margin-bottom: 5px !important;
+	border:none !important;
+}
+.classify-list ul li a img{
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+}
+.classify-list ul li a div{
+	font-size: 14px !important;
+}
+.hot_tabs{
+	padding-bottom: 15px;
+}
+.top_div{
+	padding: 10px;
+	/*margin-bottom: 10px;*/
+}
+.top_div .tabs_title{
+	color: #333;
+	font-size: 16px;
+	padding-left: 5px;
+	border-left: 4px solid #2752d5;
+}
+.top_div a img{
+	width: 16px;
+	height: 16px;
+	margin: 2px 5px 0 0;
+}
+.top_div a span{
+	font-size: 14px;
+}
+.tabs_list ul{
+	border:none !important;
+	background-color: #fff !important;
+}
+.tabs_list ul li{
+	background-color: #fff !important;
+	padding: 0 4px 4px 0 !important;
+	border:none !important;
+}
+.tabs_list ul li:first-child+li+li+li,
+.tabs_list ul li:first-child+li+li+li+li+li+li+li{
+    padding: 0!important;
+}
+.tabs_list ul li a{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	background-color: #f8f8f8;
+}
+.tool .top_div {
+	padding: 10px 10px 0 10px;
+}
+.tool .top_div a img {
+    width: 8px;
+    height: 8px;
+    margin: 6px 0 0 5px;
+}
+.tool .top_div .tabs_title span{
+	color: #666;
+	font-size: 12px;
+	padding-left: 10px;
+}
+.mui-grid-view.mui-grid-9{
+	border:none !important;
+}
+.open_company .oc_title{
+	padding: 15px;
+	text-align: center;
+	border-bottom: 1px solid #f8f8f8;
+}
+.open_company .oc_title p:first-child {
+	width: 115px;
+	margin: 0 auto 10px auto;
+	font-size: 16px;
+	color:#333;
+}
+.open_company .oc_title p:first-child img{
+	width: 30px;
+	display: inline-block;	
+}
+.open_company .oc_title p:first-child span{
+	margin: 2px 0 0 5px;	
+}
+.open_company .oc_content div{
+	padding: 20px 0;
+}
+.open_company .oc_content div a{
+	display: block;
+	padding: 0;
+}
+.open_company .oc_content div a p{
+	display: block;
+	text-align: center;
+}
+.open_company .oc_content div a p img{
+	display: block;
+	width: 100px;	
+	height: 65px;
+	margin: 0 auto;	
+}
+.open_company .oc_content div a p:first-child{
+	color:#333;
+	font-size: 16px;
+}
+.open_company .oc_content div a p:first-child+p{
+	color:#666;
+	font-size: 12px;
+}
+.open_company .oc_content div a p:first-child+p+p{
+	margin-top: 10px;
+	width: 100%;
+}
+.open_company .oc_content div:first-child+div{
+	border-left: 1px solid #f8f8f8;
+	border-right: 1px solid #f8f8f8;
+}
+.open_company .adv{
+	padding: 0 10px;
+}
+.open_company .adv img{
+	width: 100%;
+}
+.company_list{
+	padding:0 10px;
+}
+.company_list .list_box{
+	display: block;
+	padding: 10px 0;
+	border-top: 1px solid #e5e5e5;
+}
+.company_list .list_box:first-child{
+	border-top: none;
+}
+.company_list .list_box .com_img{
+	width: 20%;
+}
+.company_list .list_box .com_img img{
+	width: 60px;
+	height: 60px;
+	display: block;
+	margin-top: 10px;
+	border-radius: 50%;
+	/*margin:0 auto;*/
+}
+.list_box .com_info {
+	width: 80%;
+}
+.list_box .com_info p{
+	margin-bottom: 5px;
+}
+.list_box .com_info p:first-child span{
+	color:#333;
+	font-size: 16px;
+	/*font-weight: 600;*/
+}
+.list_box .com_info p:first-child img{
+	width: 20px;
+	height: 20px;
+}
+.list_box .com_info p.com_tabs span{
+	display: inline-block;
+	color:#666;
+	font-size: 12px;
+	padding: 0px 5px;
+	margin-right: 5px;
+	border-radius: 15px;
+	border: 1px solid #e5e5e5;
+}
+.list_box .com_info p.watched_num img{
+	width: 16px;
+	margin-top: 3px;
+	margin-right: 5px;
+}
+.list_box .com_info p.watched_num span{
+	color:#666;
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 320px) {
+	.company_list .list_box .com_img {
+	    width: 18%;
+	}
+	.company_list .list_box .com_img img {
+	    width: 50px;
+	    height: 50px;
+	    display: block;
+	    margin-top: 10px;
+	    border-radius: 50%;
+	    /* margin: 0 auto; */
+	}
+	.list_box .com_info {
+	    width: 82%;
+	}
+	.list_box .com_info p.com_tabs span {
+	    padding: 0px 4px;
+	    margin-right: 0px;
+	}
 }
