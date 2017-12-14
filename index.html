@@ -1,20 +1,89 @@
 <!doctype html>
 <html>
-
 	<head>
 		<meta charset="UTF-8">
 		<title>企服盒首页</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="css/mui.min.css" rel="stylesheet" />
 		<link href="css/index.css" rel="stylesheet" />
+		<script src="js/jquery-1.4.2.js" type="text/javascript" charset="utf-8"></script>
 	</head>
-
 	<body>
 		<!--顶部导航-->
-		<header class="header_nav mui-bar mui-bar-nav">
-			<!--<h1 class="mui-title">标题</h1>-->
+		<header class="header_nav mui-bar mui-bar-nav mui-row">
+			<a href="#" class="ding_wei mui-col-xs-2 mui-col-sm-2 mui-clearfix">
+				<img class="fl" src="img/dingwei2.png" alt="" />
+				<span class="fl">全国</span>
+			</a>
+			<div class="search_box mui-col-xs-8 mui-col-sm-8">
+				<img src="img/search_img.png" alt="" />
+			    <input type="search" class="" placeholder="搜索公司/产品/服务" disabled="disabled">
+			</div>
+			<a href="javascript:;" class="muea_btn mui-col-xs-2 mui-col-sm-2">
+				<img src="img/cai_dan.png" alt="" />
+			</a>
+			<!--隐藏菜单列表-->
+			<ul class="cd_list" style="display: none;">
+				<li>
+					<a class="#" href="#">
+						<img src="img/cd_home.png" alt="" />
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a class="#" href="#">
+						<img src="img/cd_yj.png" alt="" />
+						<span>意见反馈</span>
+					</a>
+				</li>
+				<li>
+					<a class="#" href="#">
+						<img src="img/cd_help.png" alt="" />
+						<span>帮助中心</span>
+					</a>
+				</li>
+				<li>
+					<a class="#" href="#">
+						<img src="img/cd_wd.png" alt="" />
+						<span>我的</span>
+					</a>
+				</li>
+				
+			</ul>
+			
 		</header>
-		<!--banner-->
+		<!--搜索弹框页面-->
+		<form class="search_abox" style="display: none;">
+			<div class="search_input">
+				<a class="sea_btn" href="javascript:;"><img src="img/search_aimg.png" alt="" /></a>
+				<input type="search" name="" id="" value="" placeholder="请输入搜索内容..."/>
+				<a class="cancel_btn" href="#">取消</a>
+			</div>
+			<!--历史搜索标签-->
+			<div class="old_search">
+				<p class="mui-clearfix">历史搜索 <a href="javascript:;" style="display: none;" class="mui-icon mui-icon-trash fr"></a></p>
+				<ul class="old_tabs mui-clearfix">
+					<li><a href="#">新闻发稿</a></li>
+					<li><a href="#">百度百科</a></li>
+					<li><a href="#">搜狗</a></li>
+					<li><a href="#">问答</a></li>
+					<li><a href="#">搜狗问答</a></li>
+					<li><a href="#">搜狗</a></li>
+					<li><a href="#">搜狗问答</a></li>
+				</ul>
+			</div>
+			<!--确定清空历史搜索弹框-->
+			<div class="sure_box" style="display: none;">
+				<div class="alert_box">
+					<p>确定清空历史搜索吗？</p>
+					<p class="mui-clearfix mui-row">
+						<button type="button" class="reset_btn mui-col-xs-6 mui-col-sm-6">取消</button>
+						<button type="button" class="sure_btn mui-col-xs-6 mui-col-sm-6">确定</button>
+					</p>
+				</div>
+			</div>
+		</form>
+		<!--轮播图-->
 		<div class="slider_banner">
 			<div class="mui-slider">
 				<div class="mui-slider-group mui-slider-loop">
@@ -167,7 +236,7 @@
 			<div class="top_div mui-clearfix">
 				<p class="tabs_title fl">快捷工具<span>共收录3000个工具</span></p>
 				<a href="javascript:;" class="refresh fr mui-clearfix">
-					<span class="fl">更新</span>
+					<span class="fl">更多</span>
 					<img src="img/more.png" class="fl" alt="" />
 				</a>
 			</div>
@@ -241,7 +310,7 @@
 					<img class="fl" src="img/oc_img.png" alt="" />
 					<span class="fl">我要开公司</span>
 				</p>
-				<p><span>创业第一步</span><span>注册您的梦想</span></p>
+				<p><span>创业第一步 注册您的梦想</span></p>
 			</div>
 			<div class="oc_content mui-row">
 				<div class="mui-col-xs-4 mui-col-sm-4">
@@ -272,23 +341,23 @@
 			</div>
 			<!--公司列表-->
 			<div class="company_list">
-				<a href="#" class="list_box mui-clearfix">
+				<div class="list_box mui-clearfix">
 					<!--公司头像-->
 					<div class="com_img fl">
-						<img src="img/company1.png"/>
+						<a href="#"><img src="img/company2.png"/></a>
 					</div>
 					<div class="com_info fr">
 						<p class="mui-clearfix">
-							<span class="fl">猪八戒技术开发有限公司</span>
+							<span class="fl"><a href="#">猪八戒技术开发有限公司</a></span>
 							<!--已认证图标-->
 							<img class="fr" src="img/renzheng1.png" alt="" />
 						</p>
 						<!--标签-->
 						<p class="com_tabs">
-							<span>公司注册</span>
-							<span>商标服务</span>
-							<span>办公设备</span>
-							<span>人员招聘</span>
+							<span><a href="#">公司注册</a></span>
+							<span><a href="#">商标服务</a></span>
+							<span><a href="#">办公设备</a></span>
+							<span><a href="#">人员招聘</a></span>
 						</p>
 						<p class="mui-clearfix watched_num">
 							<!--浏览量图标-->
@@ -296,24 +365,24 @@
 							<span class="fl">12345</span>
 						</p>
 					</div>
-				</a>
-				<a href="#" class="list_box mui-clearfix">
+				</div>
+				<div class="list_box mui-clearfix">
 					<!--公司头像-->
 					<div class="com_img fl">
-						<img src="img/company2.png"/>
+						<a href="#"><img src="img/company1.png"/></a>
 					</div>
 					<div class="com_info fr">
 						<p class="mui-clearfix">
-							<span class="fl">猪八戒技术开发有限公司</span>
+							<span class="fl"><a href="#">猪八戒技术开发有限公司</a></span>
 							<!--已认证图标-->
-							<img class="fr" src="img/renzheng2.png" alt="" />
+							<img class="fr" src="img/renzheng1.png" alt="" />
 						</p>
 						<!--标签-->
 						<p class="com_tabs">
-							<span>公司注册</span>
-							<span>商标服务</span>
-							<span>办公设备</span>
-							<span>人员招聘</span>
+							<span><a href="#">公司注册</a></span>
+							<span><a href="#">商标服务</a></span>
+							<span><a href="#">办公设备</a></span>
+							<span><a href="#">人员招聘</a></span>
 						</p>
 						<p class="mui-clearfix watched_num">
 							<!--浏览量图标-->
@@ -321,24 +390,24 @@
 							<span class="fl">12345</span>
 						</p>
 					</div>
-				</a>
-				<a href="#" class="list_box mui-clearfix">
+				</div>
+				<div class="list_box mui-clearfix">
 					<!--公司头像-->
 					<div class="com_img fl">
-						<img src="img/company3.png"/>
+						<a href="#"><img src="img/company3.png"/></a>
 					</div>
 					<div class="com_info fr">
 						<p class="mui-clearfix">
-							<span class="fl">猪八戒技术开发有限公司</span>
+							<span class="fl"><a href="#">猪八戒技术开发有限公司</a></span>
 							<!--已认证图标-->
-							<img class="fr" src="img/renzheng2.png" alt="" />
+							<img class="fr" src="img/renzheng1.png" alt="" />
 						</p>
 						<!--标签-->
 						<p class="com_tabs">
-							<span>公司注册</span>
-							<span>商标服务</span>
-							<span>办公设备</span>
-							<span>人员招聘</span>
+							<span><a href="#">公司注册</a></span>
+							<span><a href="#">商标服务</a></span>
+							<span><a href="#">办公设备</a></span>
+							<span><a href="#">人员招聘</a></span>
 						</p>
 						<p class="mui-clearfix watched_num">
 							<!--浏览量图标-->
@@ -346,7 +415,7 @@
 							<span class="fl">12345</span>
 						</p>
 					</div>
-				</a>
+				</div>
 			</div>
 		</div>
 		<!--我要建团队-->
@@ -356,7 +425,7 @@
 					<img class="fl" src="img/team.png" alt="" />
 					<span class="fl">我要建团队</span>
 				</p>
-				<p><span>轻松招聘 </span><span>捕获高端人才</span></p>
+				<p><span>轻松招聘 捕获高端人才</span></p>
 			</div>
 			<div class="oc_content mui-row">
 				<div class="mui-col-xs-4 mui-col-sm-4">
@@ -387,23 +456,23 @@
 			</div>
 			<!--公司列表-->
 			<div class="company_list">
-				<a href="#" class="list_box mui-clearfix">
+				<div class="list_box mui-clearfix">
 					<!--公司头像-->
 					<div class="com_img fl">
-						<img src="img/company1.png"/>
+						<a href="#"><img src="img/company1.png"/></a>
 					</div>
 					<div class="com_info fr">
 						<p class="mui-clearfix">
-							<span class="fl">猪八戒技术开发有限公司</span>
+							<span class="fl"><a href="#">猪八戒技术开发有限公司</a></span>
 							<!--已认证图标-->
 							<img class="fr" src="img/renzheng1.png" alt="" />
 						</p>
 						<!--标签-->
 						<p class="com_tabs">
-							<span>公司注册</span>
-							<span>商标服务</span>
-							<span>办公设备</span>
-							<span>人员招聘</span>
+							<span><a href="#">公司注册</a></span>
+							<span><a href="#">商标服务</a></span>
+							<span><a href="#">办公设备</a></span>
+							<span><a href="#">人员招聘</a></span>
 						</p>
 						<p class="mui-clearfix watched_num">
 							<!--浏览量图标-->
@@ -411,24 +480,24 @@
 							<span class="fl">12345</span>
 						</p>
 					</div>
-				</a>
-				<a href="#" class="list_box mui-clearfix">
+				</div>
+				<div class="list_box mui-clearfix">
 					<!--公司头像-->
 					<div class="com_img fl">
-						<img src="img/company2.png"/>
+						<a href="#"><img src="img/company2.png"/></a>
 					</div>
 					<div class="com_info fr">
 						<p class="mui-clearfix">
-							<span class="fl">猪八戒技术开发有限公司</span>
+							<span class="fl"><a href="#">猪八戒技术开发有限公司</a></span>
 							<!--已认证图标-->
-							<img class="fr" src="img/renzheng2.png" alt="" />
+							<img class="fr" src="img/renzheng1.png" alt="" />
 						</p>
 						<!--标签-->
 						<p class="com_tabs">
-							<span>公司注册</span>
-							<span>商标服务</span>
-							<span>办公设备</span>
-							<span>人员招聘</span>
+							<span><a href="#">公司注册</a></span>
+							<span><a href="#">商标服务</a></span>
+							<span><a href="#">办公设备</a></span>
+							<span><a href="#">人员招聘</a></span>
 						</p>
 						<p class="mui-clearfix watched_num">
 							<!--浏览量图标-->
@@ -436,24 +505,24 @@
 							<span class="fl">12345</span>
 						</p>
 					</div>
-				</a>
-				<a href="#" class="list_box mui-clearfix">
+				</div>
+				<div class="list_box mui-clearfix">
 					<!--公司头像-->
 					<div class="com_img fl">
-						<img src="img/company3.png"/>
+						<a href="#"><img src="img/company3.png"/></a>
 					</div>
 					<div class="com_info fr">
 						<p class="mui-clearfix">
-							<span class="fl">猪八戒技术开发有限公司</span>
+							<span class="fl"><a href="#">猪八戒技术开发有限公司</a></span>
 							<!--已认证图标-->
-							<img class="fr" src="img/renzheng2.png" alt="" />
+							<img class="fr" src="img/renzheng1.png" alt="" />
 						</p>
 						<!--标签-->
 						<p class="com_tabs">
-							<span>公司注册</span>
-							<span>商标服务</span>
-							<span>办公设备</span>
-							<span>人员招聘</span>
+							<span><a href="#">公司注册</a></span>
+							<span><a href="#">商标服务</a></span>
+							<span><a href="#">办公设备</a></span>
+							<span><a href="#">人员招聘</a></span>
 						</p>
 						<p class="mui-clearfix watched_num">
 							<!--浏览量图标-->
@@ -461,17 +530,383 @@
 							<span class="fl">12345</span>
 						</p>
 					</div>
-				</a>
+				</div>
 			</div>
 		</div>
-		
-		
-		
-		
-		
-		
-		
-		
+		<!--我要做产品-->
+		<div class="open_company margin-top-10">
+			<div class="oc_title">
+				<p class="mui-clearfix"> 
+					<img class="fl" src="img/pro.png" alt="" />
+					<span class="fl">我要做产品</span>
+				</p>
+				<p><span>奠定基础 打造产品核心竞争力</span></p>
+			</div>
+			<div class="oc_content mui-row">
+				<div class="mui-col-xs-4 mui-col-sm-4">
+					<a href="#">
+						<p>软件著作权</p>
+						<p>软件产品 基础必备 </p>
+						<p><img src="img/pro1.png"/></p>
+					</a>
+				</div>
+				<div class="mui-col-xs-4 mui-col-sm-4">
+					<a href="#">
+						<p>ICP许可证</p>
+						<p>网络经营敲门砖</p>
+						<p><img src="img/pro2.png"/></p>
+					</a>
+				</div>
+				<div class="mui-col-xs-4 mui-col-sm-4">
+					<a href="#">
+						<p>公众号申请</p>
+						<p>公众号第一步</p>
+						<p><img src="img/pro3.png"/></p>
+					</a>
+				</div>
+			</div>
+			<!--广告-->
+			<div class="adv">
+				<img src="img/adv.png"/>
+			</div>
+			<!--公司列表-->
+			<div class="company_list">
+				<div class="list_box mui-clearfix">
+					<!--公司头像-->
+					<div class="com_img fl">
+						<a href="#"><img src="img/company1.png"/></a>
+					</div>
+					<div class="com_info fr">
+						<p class="mui-clearfix">
+							<span class="fl"><a href="#">猪八戒技术开发有限公司</a></span>
+							<!--已认证图标-->
+							<img class="fr" src="img/renzheng1.png" alt="" />
+						</p>
+						<!--标签-->
+						<p class="com_tabs">
+							<span><a href="#">公司注册</a></span>
+							<span><a href="#">商标服务</a></span>
+							<span><a href="#">办公设备</a></span>
+							<span><a href="#">人员招聘</a></span>
+						</p>
+						<p class="mui-clearfix watched_num">
+							<!--浏览量图标-->
+							<img class="fl" src="img/heart.png" alt="" />
+							<span class="fl">12345</span>
+						</p>
+					</div>
+				</div>
+				<div class="list_box mui-clearfix">
+					<!--公司头像-->
+					<div class="com_img fl">
+						<a href="#"><img src="img/company2.png"/></a>
+					</div>
+					<div class="com_info fr">
+						<p class="mui-clearfix">
+							<span class="fl"><a href="#">猪八戒技术开发有限公司</a></span>
+							<!--已认证图标-->
+							<img class="fr" src="img/renzheng1.png" alt="" />
+						</p>
+						<!--标签-->
+						<p class="com_tabs">
+							<span><a href="#">公司注册</a></span>
+							<span><a href="#">商标服务</a></span>
+							<span><a href="#">办公设备</a></span>
+							<span><a href="#">人员招聘</a></span>
+						</p>
+						<p class="mui-clearfix watched_num">
+							<!--浏览量图标-->
+							<img class="fl" src="img/heart.png" alt="" />
+							<span class="fl">12345</span>
+						</p>
+					</div>
+				</div>
+				<div class="list_box mui-clearfix">
+					<!--公司头像-->
+					<div class="com_img fl">
+						<a href="#"><img src="img/company3.png"/></a>
+					</div>
+					<div class="com_info fr">
+						<p class="mui-clearfix">
+							<span class="fl"><a href="#">猪八戒技术开发有限公司</a></span>
+							<!--已认证图标-->
+							<img class="fr" src="img/renzheng1.png" alt="" />
+						</p>
+						<!--标签-->
+						<p class="com_tabs">
+							<span><a href="#">公司注册</a></span>
+							<span><a href="#">商标服务</a></span>
+							<span><a href="#">办公设备</a></span>
+							<span><a href="#">人员招聘</a></span>
+						</p>
+						<p class="mui-clearfix watched_num">
+							<!--浏览量图标-->
+							<img class="fl" src="img/heart.png" alt="" />
+							<span class="fl">12345</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--我要做推广-->
+		<div class="open_company margin-top-10">
+			<div class="oc_title">
+				<p class="mui-clearfix"> 
+					<img class="fl" src="img/tui_guang.png" alt="" />
+					<span class="fl">我要做推广</span>
+				</p>
+				<p><span>渠道推广 先人一步</span></p>
+			</div>
+			<div class="oc_content mui-row">
+				<div class="mui-col-xs-4 mui-col-sm-4">
+					<a href="#">
+						<p>电商解决方案</p>
+						<p>搭建专属微信商城 </p>
+						<p><img src="img/tg1.png"/></p>
+					</a>
+				</div>
+				<div class="mui-col-xs-4 mui-col-sm-4">
+					<a href="#">
+						<p>微官网</p>
+						<p>官方网站建设</p>
+						<p><img src="img/tg2.png"/></p>
+					</a>
+				</div>
+				<div class="mui-col-xs-4 mui-col-sm-4">
+					<a href="#">
+						<p>官方网站建设</p>
+						<p>时下最火推广</p>
+						<p><img src="img/tg3.png"/></p>
+					</a>
+				</div>
+			</div>
+			<!--广告-->
+			<div class="adv">
+				<img src="img/adv.png"/>
+			</div>
+			<!--公司列表-->
+			<div class="company_list">
+				<div class="list_box mui-clearfix">
+					<!--公司头像-->
+					<div class="com_img fl">
+						<a href="#"><img src="img/company1.png"/></a>
+					</div>
+					<div class="com_info fr">
+						<p class="mui-clearfix">
+							<span class="fl"><a href="#">猪八戒技术开发有限公司</a></span>
+							<!--已认证图标-->
+							<img class="fr" src="img/renzheng1.png" alt="" />
+						</p>
+						<!--标签-->
+						<p class="com_tabs">
+							<span><a href="#">公司注册</a></span>
+							<span><a href="#">商标服务</a></span>
+							<span><a href="#">办公设备</a></span>
+							<span><a href="#">人员招聘</a></span>
+						</p>
+						<p class="mui-clearfix watched_num">
+							<!--浏览量图标-->
+							<img class="fl" src="img/heart.png" alt="" />
+							<span class="fl">12345</span>
+						</p>
+					</div>
+				</div>
+				<div class="list_box mui-clearfix">
+					<!--公司头像-->
+					<div class="com_img fl">
+						<a href="#"><img src="img/company2.png"/></a>
+					</div>
+					<div class="com_info fr">
+						<p class="mui-clearfix">
+							<span class="fl"><a href="#">猪八戒技术开发有限公司</a></span>
+							<!--已认证图标-->
+							<img class="fr" src="img/renzheng1.png" alt="" />
+						</p>
+						<!--标签-->
+						<p class="com_tabs">
+							<span><a href="#">公司注册</a></span>
+							<span><a href="#">商标服务</a></span>
+							<span><a href="#">办公设备</a></span>
+							<span><a href="#">人员招聘</a></span>
+						</p>
+						<p class="mui-clearfix watched_num">
+							<!--浏览量图标-->
+							<img class="fl" src="img/heart.png" alt="" />
+							<span class="fl">12345</span>
+						</p>
+					</div>
+				</div>
+				<div class="list_box mui-clearfix">
+					<!--公司头像-->
+					<div class="com_img fl">
+						<a href="#"><img src="img/company3.png"/></a>
+					</div>
+					<div class="com_info fr">
+						<p class="mui-clearfix">
+							<span class="fl"><a href="#">猪八戒技术开发有限公司</a></span>
+							<!--已认证图标-->
+							<img class="fr" src="img/renzheng1.png" alt="" />
+						</p>
+						<!--标签-->
+						<p class="com_tabs">
+							<span><a href="#">公司注册</a></span>
+							<span><a href="#">商标服务</a></span>
+							<span><a href="#">办公设备</a></span>
+							<span><a href="#">人员招聘</a></span>
+						</p>
+						<p class="mui-clearfix watched_num">
+							<!--浏览量图标-->
+							<img class="fl" src="img/heart.png" alt="" />
+							<span class="fl">12345</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--热门推荐-->
+		<div class="hot_tj margin-top-10">
+			<div class="oc_title">
+				<p class="mui-clearfix"> 
+					<img class="fl" src="img/hot_tuijian.png" alt="">
+					<span class="fl">热门推荐</span>
+				</p>
+			</div>
+			<div class="tj_company">
+				<div class="company_box mui-clearfix">
+					<div class="fl">
+						<p class="company_name"><a href="#">猪八戒技术开发有限公司</a></p>
+						<p class="company_tab">
+							<a href="javascript:;">公司注册</a>
+							<a href="javascript:;">公司注册</a>
+							<a href="javascript:;">公司注册</a>
+							<a href="javascript:;">公司注册</a>
+						</p>
+						<p class="company_info">
+							<span>1亿注册资本</span>
+							<span>成立20年</span>
+							<span>500-1000人</span>
+						</p>
+					</div>
+					<div class="company_img fl"><a href="#"><img src="img/com_logo.png"/></a></div>
+					
+					<!--标签-->
+					<div class="blue_tabs fl"><p>热门搜索</p></div>
+				</div>
+				<div class="company_box mui-clearfix">
+					<div class="fl">
+						<p class="company_name"><a href="#">猪八戒技术开发有限公司</a></p>
+						<p class="company_tab">
+							<a href="javascript:;">公司注册</a>
+							<a href="javascript:;">公司注册</a>
+							<a href="javascript:;">公司注册</a>
+							<a href="javascript:;">公司注册</a>
+						</p>
+						<p class="company_info">
+							<span>1亿注册资本</span>
+							<span>成立20年</span>
+							<span>500-1000人</span>
+						</p>
+					</div>
+					<div class="company_img fl"><a href="#"><img src="img/com_logo.png"/></a></div>
+					
+					<!--标签-->
+					<div class="blue_tabs fl"><p>推广</p></div>
+				</div>
+				<div class="company_box mui-clearfix">
+					<div class="fl">
+						<p class="company_name"><a href="#">猪八戒技术开发有限公司</a></p>
+						<p class="company_tab">
+							<a href="javascript:;">公司注册</a>
+							<a href="javascript:;">公司注册</a>
+							<a href="javascript:;">公司注册</a>
+							<a href="javascript:;">公司注册</a>
+						</p>
+						<p class="company_info">
+							<span>1亿注册资本</span>
+							<span>成立20年</span>
+							<span>500-1000人</span>
+						</p>
+					</div>
+					<div class="company_img fl"><a href="#"><img src="img/com_logo.png"/></a></div>
+					
+					<!--标签-->
+					<div class="blue_tabs fl"><p>推广</p></div>
+				</div>
+				<div class="company_box mui-clearfix">
+					<div class="fl">
+						<p class="company_name"><a href="#">猪八戒技术开发有限公司</a></p>
+						<p class="company_tab">
+							<a href="javascript:;">公司注册</a>
+							<a href="javascript:;">公司注册</a>
+							<a href="javascript:;">公司注册</a>
+							<a href="javascript:;">公司注册</a>
+						</p>
+						<p class="company_info">
+							<span>1亿注册资本</span>
+							<span>成立20年</span>
+							<span>500-1000人</span>
+						</p>
+					</div>
+					<div class="company_img fl"><a href="#"><img src="img/com_logo.png"/></a></div>
+					
+					<!--标签-->
+					<div class="blue_tabs fl"><p>推广</p></div>
+				</div>
+				<div class="company_box mui-clearfix">
+					<div class="fl">
+						<p class="company_name"><a href="#">猪八戒技术开发有限公司</a></p>
+						<p class="company_tab">
+							<a href="javascript:;">公司注册</a>
+							<a href="javascript:;">公司注册</a>
+							<a href="javascript:;">公司注册</a>
+							<a href="javascript:;">公司注册</a>
+						</p>
+						<p class="company_info">
+							<span>1亿注册资本</span>
+							<span>成立20年</span>
+							<span>500-1000人</span>
+						</p>
+					</div>
+					<div class="company_img fl"><a href="#"><img src="img/com_logo.png"/></a></div>
+					
+					<!--标签-->
+					<div class="blue_tabs fl"><p>热门搜索</p></div>
+				</div>
+			</div>
+			
+		</div>
+		<!--已入住企业-->
+		<div class="ru_zhu mui-clearfix">
+			<p class="fl">已入驻企业 <span>1,234,567</span></p>
+			<a class="fr" href="#">免费入驻</a>
+		</div>
+		<!--版权-->
+		<div class="ban_quan">
+			<p>Copyright @ 1991-2018 Hezhong.All Rights Reserved.</p>
+			<p>禾众广告 版权所有</p>
+		</div>
+		<!--底部导航-->
+		<nav class="footer_nav mui-bar mui-bar-tab">
+		    <a class="mui-tab-item mui-active">
+		        <img src="img/f_home.png" alt="" />
+		    </a>
+		    <a class="mui-tab-item mui-clearfix">
+		    	<img class="mui-block" src="img/f_qyk.png" alt="" />
+		        <span class="mui-tab-label mui-block">企业库</span>
+		    </a>
+		    <a class="mui-tab-item mui-clearfix">
+		        <img class="mui-block" src="img/f_news.png" alt="" />
+		        <span class="mui-tab-label mui-block">资讯</span>
+		    </a>
+		    <a class="mui-tab-item mui-clearfix">
+		        <img class="mui-block" src="img/f_tool.png" alt="" />
+		        <span class="mui-tab-label mui-block">工具</span>
+		    </a>
+		     <a class="mui-tab-item mui-clearfix">
+		        <img class="mui-block" src="img/f_wd.png" alt="" />
+		        <span class="mui-tab-label mui-block">我的</span>
+		    </a>
+		</nav>
 		
 		<script src="js/mui.min.js"></script>
 		<script type="text/javascript">
@@ -481,6 +916,68 @@
 			gallery.slider({
 				interval: 3000 //自动轮播周期，若为0则不自动播放，默认为0；
 			});
+			
+			//点击顶部菜单按钮
+			$(".muea_btn").click(function(){
+				if($(".cd_list").css("display")=="block"){
+					$(".cd_list").css("display","none");
+				}else if($(".cd_list").css("display")=="none"){
+					$(".cd_list").css("display","block");
+				}
+			});
+			
+			//点击首页搜索框显示搜索弹框
+			$(".search_box").click(function(){
+				$(".search_abox").css("display","block");
+				$("body").css("overflow-y","hidden");
+				//如果没有历史记录 清空按钮隐藏
+				if($(".old_tabs li").length==0){
+					$(".old_search p a").css("display","none");
+				}else{
+					$(".old_search p a").css("display","block");
+				}
+			});
+			
+			//点击搜索弹框取消按钮
+			$(".cancel_btn").click(function(){
+				$(".search_abox").css("display","none");
+				$("body").css("overflow-y","visible");
+			});
+			
+			
+			//点击清空历史搜索记录
+			$(".old_search p a").click(function(){
+				$(".sure_box").css("display","block");
+			});
+			
+			
+			$(document).ready(function(){
+				//搜索弹框全屏
+				var H = $(window).height();
+				$(".search_abox").height(H);
+				
+				//确定清除历史搜索记录弹框居中
+//				var h = $(".alert_box").height();
+//				console.log(h);
+				$(".alert_box").css({
+					"marginTop":(H-140)/2+"px",
+					"marginLeft":"auto",
+					"marginRight":"auto",
+					"marginBottom":"0"
+				});
+			});
+			
+			//点击确认清除弹框的确认按钮
+			$(".sure_btn").click(function(){
+				$(".sure_box").css("display","none");
+				$(".old_tabs li").remove();
+				$(".old_search p a").css("display","none");
+			});
+			//点击确认清除弹框的取消按钮
+			$(".reset_btn").click(function(){
+				$(".sure_box").css("display","none");
+			});
+			
 		</script>
 	</body>
 
