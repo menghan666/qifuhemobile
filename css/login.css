@@ -1071,7 +1071,7 @@ a.a-bq{
 	height: auto;
 	overflow: hidden;
 	max-width: 750px;
-	margin: 0 auto;
+	margin: 0 auto 70px;
 }
 .fl-con ul{
 	width: 25%;
@@ -1114,7 +1114,7 @@ a.a-bq{
 }
 .fenl-con{
 	width:100%;
-	min-height: 200px;
+	min-height: 50px;
 	height: auto;
 	overflow: hidden;
 	background: #FFF;
@@ -1159,7 +1159,7 @@ a.a-bq{
 	min-height: 50px;
 	height: auto;
 	overflow: hidden;
-	padding:10px 2.5%;
+	padding:15px 2.5%;
 	border-bottom: 1px solid #e5e5e5;
 }
 .fl-tj img{
@@ -1174,17 +1174,39 @@ a.a-bq{
 	margin-left: 2%;
 }
 .fl-tj .fl-tjr h1{
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	color: #333;
 	text-align: left;
 }
 .fl-tj .fl-tjr h1 a{
+	width:87%;
 	color: #333;
 	overflow: hidden;
-	text-
+	text-overflow: ellipsis ;
+	white-space: nowrap ;
+	float: left;
 }
 .fl-tj .fl-tjr h1 img{
 	float: right;
 	border: none;
-	width:10%;
+	width:8%;
+}
+.fl-tj .fl-tjr ul.fl-ul{
+	margin-top: 4px;
+	min-height: 30px;
+	height: auto;
+	overflow: hidden;
+	padding-bottom: 0;
+	width:100%;
+}
+.fl-tj .fl-tjr ul.fl-ul li{
+	height: 25px;
+	line-height: 25px;
+	float: left;
+	background: #f8f8f8;
+	border: 1px solid #e5e5e5;
+	border-radius: 6px;
+	font-size: 0.7em;
+	padding: 0 2%;
+	margin: 0 1% 4px 0;
 }
