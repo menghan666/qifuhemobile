@@ -561,7 +561,7 @@ p{
 	font-size: 14px;
 	color:#333 !important;
 }
-.footer_nav a:first-child img{
+.footer_nav .home_img{
 	width: 70%;
 	max-width: 70px;
 	margin: 2px auto 0 auto;
