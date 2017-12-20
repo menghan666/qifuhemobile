@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>免费认证</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/personal.css" rel="stylesheet" />
+		<script src="js/jquery-1.4.2.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="rz_box">
+			<!--顶部返回-->
+			<div class="back_top">
+				<a href="#" class="clearfix">
+					<img class="float_lf" src="img/login_fh.png" alt="" />
+					<span class="float_lf">返回</span>
+				</a>
+			</div>
+			<!--认证-->
+			<form class="ren_zheng">
+				<div class="ren_title">免费认证</div>
+				<div class="stage1">如果你是创业公司高管、投资圈人士，欢迎成为企服盒认证用户，享有<span>优先展示在客户检索页，编辑公司信息</span>等权益。</div>
+				<div class="upload_photo">
+					<img id="rz_img" src="" alt="" style="display: none;">
+				</div>
+				<!--替换按钮样式图片-->
+				<div class="sc-btn">
+					<img class="ti_img" src="img/shangchuan_03.png" alt="">
+					<input type="file" name="" id="up" value="" placeholder="上传名片/营业执照">
+				</div>
+				<div class="stage2">请务必确保上传<span>本人名片/公司营业执照</span>，名片/营业执照上的公司名称与所认领的公司一致；提交后企服盒会在2个工作日内电话确认，您可能收到4006-685-611的审核电话；图片大小限定为<span>20M</span>以内的<span>PNG、JPG</span>格式。</div>
+				<div>
+					<button type="submit" class="shen-qing">申请认证</button>
+				</div>
+			</form>
+		</div>
+		
+		<script src="js/mui.min.js"></script>
+		<script src="js/uploadPreview.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var H = $(document).height();
+				$(".rz_box").height(H);
+				$("#up").click(function(){
+					$("#rz_img").css("display","block");
+				});
+				$("#up").uploadPreview({ Img: "rz_img", Width: 120, Height: 120 });
+				
+				//点击提交按钮判断图片是否为空
+				$(".shen-qing").click(function(){
+					if($("#rz_img").attr("src")==""){
+						alert("请上传图片！");
+						return false;
+					}else{
+//						$(".suc-box").css("display","block");
+						return true;
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>
