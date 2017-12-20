@@ -1,0 +1,232 @@
+.personal_top{
+	width: 100%;
+	max-width: 750px;
+	background-color: #fff;
+	/*padding: 10px;*/
+}
+.message{
+	padding: 10px;
+}
+.message a img:first-child{
+	width: 26px;
+}
+.message a img:first-child+img{
+	width: 8px;
+}
+.login_status{
+	padding: 20px 0 10px 0;
+	margin: 0 10px;
+	background: url(../img/per_bg.png) center no-repeat;
+	background-size: 100%;
+}
+.login_status p:first-child{
+	font-size: 24px;
+	font-family:SimHei;
+	color:#333;
+}
+.login_status p:first-child+p{
+	margin: 30px 0 40px 0;
+}
+.login_status p:first-child+p a{
+	display: inline-block;
+	border:1px solid #2552d5;
+	border-radius: 5px;
+	font-size: 18px;
+}
+.login_status p:first-child+p a:first-child{
+	color:#fff;
+	background-color: #2552d5;
+	margin-right: 10px;
+	padding: 10px 15px;	
+}
+.login_status p:first-child+p a:first-child+a{
+	color:#2552d5;
+	padding: 10px 10px;	
+}
+.mine_box a{
+	display: block;
+	padding-top:10px;
+	text-align: center;
+}
+.mine_box a:first-child+a{
+	border-left:1px solid #e5e5e5;
+	border-right:1px solid #e5e5e5;
+}
+.mine_box a img{
+	display: block;
+	margin: 0 auto;
+	width: 24px;
+	height:24px;
+}
+.mine_box a p{
+	font-size: 14px;
+	color:#333;
+	padding: 5px 0;
+}
+.personal_list{
+	width: 100%;
+	max-width: 750px;
+	background-color: #fff;
+	margin-top: 10px;
+	padding-bottom: 50px;
+}
+.personal_list ul li{
+}
+.personal_list ul li a {
+	display: block;
+	font-size: 16px;
+	height: 50px;
+	padding:0 10px;
+	line-height: 50px;
+	border-bottom:1px solid #e5e5e5;
+}
+.personal_list ul li a img{
+	display: block;
+	margin-top: 15px;
+	margin-right: 10px;
+	width: 20px;
+}
+.personal_list ul li a span img{
+	display: block;
+    margin-top: 18px;
+    margin-right: 5px;
+    width: 8px;
+}
+.personal_list ul li:first-child+li+li+li+li a img{
+	margin-top: 17px;
+}
+
+.footer_nav{
+	/*padding: 0 10px;*/
+	background-color: #fff;
+	box-shadow: none;
+	border-top:1px solid #e5e5e5;
+}
+.footer_nav a img{
+	width: 34%;
+	max-width: 34px;
+	margin: 0 auto 5px auto;
+}
+.footer_nav a{
+	padding: 6px 0 0 0;
+	font-size: 14px;
+	color:#333 !important;
+}
+.footer_nav .home_img{
+	width: 70%;
+	max-width: 70px;
+	margin: 2px auto 0 auto;
+}
+
+.act_color span{
+	color:#2552d5 !important;
+}
+.act_color span:first-child{
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 auto;
+	border-radius: 50%;
+	background-color: #2552d5;
+}
+.act_color span:first-child img {
+    width: 66%;
+    padding-top: 2px;
+}
+
+/*已登录状态*/
+.login_after{
+	padding: 0 10px;
+	margin:0;
+	border-bottom: 1px solid #e5e5e5;
+}
+.login_after a{
+	position: relative;
+	display: block;
+}
+.login_after a img:first-child{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+.login_after a img:first-child{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+.login_after a img:first-child+img{
+	position: absolute;
+	bottom:0;
+	right:0;
+	width: 16px;
+}
+.login_after .per_info{
+	padding: 0 0 0 10px;
+}
+.login_after .per_info div{
+	height: 30px;
+	line-height: 30px;
+}
+.login_after .per_info p img{
+	width: 20px;
+	margin: 5px;
+}
+.com_name p:first-child{
+	width: 180px;
+	color:#333;
+	font-size: 16px;
+}
+.fans_num p{
+	margin-right: 10px;
+	color:#333;
+}
+.fans_num p span{
+	margin-left: 5px;
+}
+.feed_btn{
+	width: 100%;
+}
+.feed_btn a{
+	display: block;
+	width: 130px;
+	text-align: center;
+	margin: 10px auto 20px auto;
+	color:#fff;
+	padding: 10px 0;
+	font-size: 14px;
+	border-radius: 5px;
+	background-color: #2552d5;
+}
+
+@media only screen and (max-width:320px) {
+	.login_status p:first-child+p {
+	    margin: 30px 0 60px 0;
+	}
+	.login_status p:first-child+p a:first-child+a {
+	    padding: 10px 5px;
+	}
+	.login_status p:first-child+p a {
+	    font-size: 16px;
+	}
+	.personal_list {
+	    width: 100%;
+	    max-width: 750px;
+	    background-color: #fff;
+	    margin-top: 10px;
+	    padding-bottom: 100px;
+	}
+	.login_after a img:first-child {
+	    width: 55px;
+	    height: 55px;
+	    border-radius: 50%;
+	}
+	.com_name p:first-child {
+	    width: 160px;
+	    color: #333;
+	    font-size: 16px;
+	}
+	.login_after .per_info {
+	    padding: 0 0 0 5px;
+	}
+}
