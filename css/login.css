@@ -539,6 +539,24 @@ p.qfh-zh a{
 	display: block;
 	margin-top: 35px;
 }
+.bg-top .bg-topra{
+	width:23%;
+	float: right;
+	text-align: right;
+}
+.bg-top .bg-topra a.cc-a{
+	float: left;
+}
+.bg-top .bg-topra img.ra-a{
+	width:50%;
+	float: left;
+	margin: 28px 5px 0 0;
+}
+.bg-top .bg-topra img.ra-b{
+	width:30px;
+	float: right;
+	margin: -15px 5px 0 0;
+}
 .bg-bom{
 	width:95%;
 	min-height: 80px;
@@ -1209,4 +1227,31 @@ a.a-bq{
 	font-size: 0.7em;
 	padding: 0 2%;
 	margin: 0 1% 4px 0;
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item{
+	padding: 0 10px;
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-scroll{
+	height: auto;
+}
+p.qyxq-p{
+	clear: both;
+	margin: 0;
+	padding: 0;
+	
+}
+.qyxq-fs{
+	width:100%;
+	height: 70px;
+}
+.qyxq-fs .qyxq-fsr{
+	
+}
+#popover{
+		height: 200px;
+		width:200px;
+	}
+.mui-btn-blue, .mui-btn-primary, input[type=submit]{
+	background: none;
+	border: none;
 }
