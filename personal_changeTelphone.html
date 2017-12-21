@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>修改手机绑定</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/personal.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!--顶部标题-->
+		<div class="back_top nav_top">
+			<a href="#" class="float_lf clearfix">
+				<img class="float_lf" src="img/login_fh.png" alt="" />
+				<span class="float_lf">返回</span>
+			</a>
+			<p class="">修改手机绑定</p>
+		</div>
+		<form class="yanzheng_tel" onsubmit="return subs_btn();">
+			<div class="old_tel clearfix">
+				<p class="float_lf color-333">输入密码</p>
+				<p class="float_lf"><input type="password" name="" id="pwd" value="" placeholder="请输入密码" /></p>
+			</div>
+			<div class="old_tel clearfix">
+				<p class="float_lf"><span>中国</span><span>+86</span></p>
+				<p class="float_lf"><input type="tel" name="" id="old_tel" value="" placeholder="请输入新手机号" /></p>
+			</div>
+			<div class="msg_box clearfix">
+				<p class="float_lf color-333">短信验证码</p>
+				<p class="float_lf"><input id="msg_txt" oninput="msg_txts();" type="text" /></p>
+				<p class="float_lf"><button id="send_msg" type="button" onclick="sends($(this));">获取验证码</button></p>
+			</div>
+			<button type="submit" class="bd_tel">完成绑定</button>
+		</form>
+
+		<script src="js/jquery-1.4.2.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+
+			$(document).ready(function() {
+				var H = $(document).height() - 44;
+				$(".yanzheng_tel").height(H);
+			});
+			// 验证密码
+			function isPassWord(password) {
+			    var pwd = /.{6,}/;
+			    return pwd.test(password);
+			}
+			//先验证密码是否错误
+			function pwds(){
+				if($.trim($('#pwd').val()).length == 0) {
+					mui.toast('密码不能为空！', {
+						duration: '1500ms',
+						type: 'div'
+					});
+					$('#pwd').focus();
+					return false;
+			    }else if(isPassWord($('#pwd').val()) == false) {
+			        mui.toast('密码不正确！', {
+						duration: '1500ms',
+						type: 'div'
+					});
+					$('#pwd').focus();
+					return false;
+			    }else if(isPassWord($('#pwd').val())== true){
+			       return true;
+			    }
+			}
+			// 验证手机号
+			function isPhoneNo(phone) {
+				var pattern = /^1[34578]\d{9}$/;
+				return pattern.test(phone);
+			}
+			//获取验证码倒计时方法
+			var wait = 60; //时间
+			function time(o) { //o为按钮的对象，p为可选，这里是60秒过后，提示文字的改变
+				if(wait == 0) {
+					o.removeAttr("disabled");
+					o.html("获取验证码"); //改变按钮中value的值
+					wait = 60;
+				} else {
+					o.attr("disabled", true); //倒计时过程中禁止点击按钮
+					o.html(wait + "s重新获取"); //改变按钮中value的值
+					wait--;
+					setTimeout(function() {
+							time(o); //循环调用
+						},
+						1000)
+				}
+			}
+			//验证手机号
+			function old_phones(){
+				if($.trim($('#old_tel').val()).length == 0) {
+					mui.toast('手机号不能为空！', {
+						duration: 'long',
+						type: 'div'
+					});
+					$('#old_tel').focus();
+					return false;
+				} else if(isPhoneNo($("#old_tel").val()) == false) {
+					mui.toast('手机号格式不正确！', {
+						duration: 'long',
+						type: 'div'
+					});
+					$('#old_tel').focus();
+					return false;
+				} else if(isPhoneNo($("#old_tel").val()) == true) {
+					return true;
+				}
+			}
+			//点击发送验证码按钮验证
+			function sends(o){
+				if(!pwds()){
+					return false;
+				}else if(!old_phones()){
+					return false;
+				}else{
+					time(o);
+				}
+			}
+			function msg_txts() {
+				if($("#msg_txt").val() == "") {
+					mui.toast('验证码不能为空！', {
+						duration: '1000ms',
+						type: 'div'
+					});
+					$("#msg_txt").focus();
+					return false;
+				}else{
+					return true;
+				}
+			};
+			//提交表单验证
+			function subs_btn(){
+				if(!pwds()){
+					return false;
+				}else if(!old_phones()){
+					return false;
+				}else if(!msg_txts()){
+					return false;
+				}
+			}
+		</script>
+	</body>
+
+</html>

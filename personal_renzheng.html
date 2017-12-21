@@ -32,11 +32,19 @@
 				</div>
 				<div class="stage2">请务必确保上传<span>本人名片/公司营业执照</span>，名片/营业执照上的公司名称与所认领的公司一致；提交后企服盒会在2个工作日内电话确认，您可能收到4006-685-611的审核电话；图片大小限定为<span>20M</span>以内的<span>PNG、JPG</span>格式。</div>
 				<div>
-					<button type="submit" class="shen-qing">申请认证</button>
+					<button type="button" class="shen-qing">申请认证</button>
 				</div>
 			</form>
 		</div>
-		
+		<!--提交成功弹框-->
+		<div class="suc_bg" style="display: none;">
+			<div class="suc_box">
+				<img src="img/suc_img.png" alt="" />
+				<p class="up_title">提交成功</p>
+				<p>我们将在2个工作日内完成审核<br/>届时您可能会收到来自企服盒的确认电话</p>
+				<a href="#" class="up_suc">确定</a>
+			</div>
+		</div>
 		<script src="js/mui.min.js"></script>
 		<script src="js/uploadPreview.js"></script>
 		<script type="text/javascript">
@@ -54,10 +62,14 @@
 						alert("请上传图片！");
 						return false;
 					}else{
-//						$(".suc-box").css("display","block");
+						$(".suc_bg").css("display","block");
 						return true;
 					}
 				});
+				$(".up_suc").click(function(){
+					$(".suc_bg").css("display","none");
+				});
+				
 			});
 		</script>
 	</body>

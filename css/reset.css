@@ -22,6 +22,9 @@ main, nav, header, footer, section, article, aside, dialog, figure, menu ,img{
 .clearfix:after{content:"";display:block;height:0;clear:both;}
 .clearfix{*+height:1%;}
 /**************************公共样式****************************/
+.color-fff{
+	color:#fff;
+}
 .color-333{
 	color: #333;
 }
