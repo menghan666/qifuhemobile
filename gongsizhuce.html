@@ -4,8 +4,9 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<title>公司注册</title>
-		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/mui.min.css" />		
 		<link rel="stylesheet" href="css/login.css" />	
+		<link rel="stylesheet" href="css/index.css" />
 		<script type="text/javascript" src="js/jquery-1.4.2.js" ></script>
 		<script type="text/javascript" src="js/shaixuan.js" ></script>
 		<script>
@@ -22,6 +23,7 @@
    			
    			});
    		</script>
+   		
 	</head>
 	<body>
 		<header class="gs-zc">
@@ -36,7 +38,35 @@
 				<input type="text" placeholder="公司注册" />
 			</div>
 			<div class="gs-zcr">
-				<a href="#"><img src="img/bg_ca.png" /></a>
+				<a href="javascript:void(0);" class="gs-a"><img class="zc-img" src="img/bg_ca.png" /></a>
+				<!--隐藏菜单列表-->
+					<ul class="cd_list" style="display:none; z-index: 999;">
+						<li>
+							<a class="#" href="#">
+								<img src="img/cd_home.png" alt="" />
+								<span>首页</span>
+							</a>
+						</li>
+						<li>
+							<a class="#" href="#">
+								<img src="img/cd_yj.png" alt="" />
+								<span>意见反馈</span>
+							</a>
+						</li>
+						<li>
+							<a class="#" href="#">
+								<img src="img/cd_help.png" alt="" />
+								<span>帮助中心</span>
+							</a>
+						</li>
+						<li>
+							<a class="#" href="#">
+								<img src="img/cd_wd.png" alt="" />
+								<span>我的</span>
+							</a>
+						</li>
+						
+					</ul>
 			</div>
 		</header>
 		<div class="mui-content" style="background: #fff;">
@@ -360,6 +390,16 @@
 				</div>
 			</div>
 		</div>
-		
+		<script type="text/javascript" src="js/mui.min.js" ></script>
+		<script type="text/javascript">
+			
+			$(".gs-a").click(function(){
+				if($(".cd_list").css("display")=="block"){
+					$(".cd_list").css("display","none");
+				}else if($(".cd_list").css("display")=="none"){
+					$(".cd_list").css("display","block");
+				}
+			});
+   		</script>
 	</body>
 </html>

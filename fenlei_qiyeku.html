@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/mui.min.css" />
 		<link href="css/index.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/login.css" />	
+		<link rel="stylesheet" href="css/index.css" />
 		<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
 		<script type="text/javascript">
 		$(function(){	
@@ -37,9 +38,38 @@
 					</div>
 				</div>
 				<div class="bg-topr">
-					<a href="#">
-						<img src="img/bg_c.png"  />
+					<a href="javacsript:void(0);" class="gs-a">
+						<img class="tr-img" src="img/bg_c.png"  />
 					</a>
+					<!--隐藏菜单列表-->
+					<ul class="cd_list" style="display:none; z-index: 999;">
+						<li>
+							<a class="#" href="#">
+								<img src="img/cd_home.png" alt="" />
+								<span>首页</span>
+							</a>
+						</li>
+						<li>
+							<a class="#" href="#">
+								<img src="img/cd_yj.png" alt="" />
+								<span>意见反馈</span>
+							</a>
+						</li>
+						<li>
+							<a class="#" href="#">
+								<img src="img/cd_help.png" alt="" />
+								<span>帮助中心</span>
+							</a>
+						</li>
+						<li>
+							<a class="#" href="#">
+								<img src="img/cd_wd.png" alt="" />
+								<span>我的</span>
+							</a>
+						</li>
+						
+					</ul>
+					
 				</div>
 			</div>
 		</header>
@@ -1178,7 +1208,7 @@
 		        <img class="mui-block" src="img/home.png" alt="" />
 		        <span class="mui-tab-label mui-block">首页</span>
 		    </a>
-		    <a class="mui-tab-item mui-clearfix">
+		    <a class="mui-tab-item mui-clearfix act_color">
 		    	<img class="mui-block" src="img/qyk_a.png" alt="" />
 		        <span class="mui-tab-label mui-block">企业库</span>
 		    </a>
@@ -1195,5 +1225,15 @@
 		        <span class="mui-tab-label mui-block">我的</span>
 		    </a>
 		</nav>
+		<script type="text/javascript" src="js/mui.min.js" ></script>
+		<script type="text/javascript">	
+			$(".gs-a").click(function(){
+				if($(".cd_list").css("display")=="block"){
+					$(".cd_list").css("display","none");
+				}else if($(".cd_list").css("display")=="none"){
+					$(".cd_list").css("display","block");
+				}
+			});
+   		</script>
 	</body>
 </html>

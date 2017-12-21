@@ -11,7 +11,7 @@ function add_img(obj,radio){
 		obj.style.color = "#333";
 		document.getElementById(radio).checked = false;
 	}else{
-		obj.style.background = "#ff9e00";
+		obj.style.background = "#2552d5";
 		obj.style.color = "#fff";
 		document.getElementById(radio).checked = true;
 	}
@@ -28,7 +28,7 @@ function add_imga(obj,radio){
 		obj.style.color = "#333";
 		document.getElementById(radio).checked = false;
 	}else{
-		obj.style.background = "#ff9e00";
+		obj.style.background = "#2552d5";
 		obj.style.color = "#fff";
 		document.getElementById(radio).checked = true;
 	}
@@ -45,7 +45,7 @@ function add_imgb(obj,radio){
 		obj.style.color = "#333";
 		document.getElementById(radio).checked = false;
 	}else{
-		obj.style.background = "#ff9e00";
+		obj.style.background = "#2552d5";
 		obj.style.color = "#fff";
 		document.getElementById(radio).checked = true;
 	}
@@ -62,7 +62,7 @@ function add_imgc(obj,radio){
 		obj.style.color = "#333";
 		document.getElementById(radio).checked = false;
 	}else{
-		obj.style.background = "#ff9e00";
+		obj.style.background = "#2552d5";
 		obj.style.color = "#fff";
 		document.getElementById(radio).checked = true;
 	}
@@ -79,7 +79,7 @@ function add_imgd(obj,radio){
 		obj.style.color = "#333";
 		document.getElementById(radio).checked = false;
 	}else{
-		obj.style.background = "#ff9e00";
+		obj.style.background = "#2552d5";
 		obj.style.color = "#fff";
 		document.getElementById(radio).checked = true;
 	}
