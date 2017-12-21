@@ -4,16 +4,11 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<title>企业详情</title>
+		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/mui.min.css" />
 		<link rel="stylesheet" href="css/login.css" />	
-		<script type="text/javascript" src="js/mui.min.js" ></script>
-		<script type="text/javascript">
-			document.addEventListener('plusready', function(){
-   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
-   			
-   			});
-   			mui('.mui-scroll-wrapper').scroll()
-   		</script>
+		<link rel="stylesheet" href="css/index.css" />
+		
 	</head>
 	<body style="background: #f8f8f8;">
 		<header class="bg-cs" style="height: 200px;">
@@ -29,66 +24,246 @@
 					<a class="cc-a" href="#">
 						<img class="ra-a" src="img/qyxq_gz.png" />
 					</a>
-					<a href="#popover" id="openPopover" class="mui-btn mui-btn-primary ">
-						<img class="ra-b" src="img/bg_c.png"  />
+					<a href="javascript:void(0);" class="cc-b">
+						<img src="img/bg_c.png"  />
 					</a>
-					
+					<!--隐藏菜单列表-->
+					<ul class="cd_list" style="display:none; z-index: 999;">
+						<li>
+							<a class="#" href="#">
+								<img src="img/cd_home.png" alt="" />
+								<span>首页</span>
+							</a>
+						</li>
+						<li>
+							<a class="#" href="#">
+								<img src="img/cd_yj.png" alt="" />
+								<span>意见反馈</span>
+							</a>
+						</li>
+						<li>
+							<a class="#" href="#">
+								<img src="img/cd_help.png" alt="" />
+								<span>帮助中心</span>
+							</a>
+						</li>
+						<li>
+							<a class="#" href="#">
+								<img src="img/cd_wd.png" alt="" />
+								<span>我的</span>
+							</a>
+						</li>
+						
+					</ul>
 				</div>
 				<div class="qyxq-fs">
 					
+					<div class="qyxq-fsr">
+						<ul>
+							<li>粉丝<br />20</li>
+							<li>浏览数<br />1000</li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</header>
+		<div class="mui-content" style="background: #f8f8f8;">
+			<div class="qyxq-top">
+				<img class="qx-logo" src=" img/qy_logoa.png" />
+				<h1 class="clearfix"><span class="txt-num1">北京鸟哥笔记有限公司 </span><img class="h1-img" src="img/qyxq_wrz.png" /></h1>
+				<div class="qx-top">
+					<a href="#">公司注册</a>
+					<a href="#">商标服务</a>
+					<a href="#">办公设备</a>
+					<a href="#">人员招聘</a>
+					<a href="#">微信推广</a>
+					<a href="#">自媒体营销</a>
+					<a href="#">律师函</a>
+					<a href="#">微信推广</a>
+					<a href="#">logo设计</a>
+					
 				</div>
 			</div>
-			<div id="popover" class="mui-popover">
-				<div class="mui-scroll-wrapper">
+			<div class="qx-jiben">
+				<p class="jb-p">基本信息</p>
+				<ul>
+					<li>所在地区<br /><span>北京</span></li>
+					<li>主营业务<br /><span>自媒体营销</span></li>
+					<li>公司规模<br /><span>500-1000人</span></li>
+					<li>融资金额<br /><span>2000万（2017.11.01）</span></li>
+					<li>注册时间<br /><span>2008年05月10日</span></li>
+				</ul>
+			</div>
+			<div class="qx-jiben">
+				<p class="jb-p"><span>热销服务</span><img src="img/qyxq_rx.png"></p>
+				<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted rxfw-c">
 				    <div class="mui-scroll">
-					    <ul class="mui-table-view">
-					    	<li class="mui-table-view-cell"><a href="#">Item1</a></li>
-					    	<li class="mui-table-view-cell"><a href="#">Item2</a></li>
-					    	<li class="mui-table-view-cell"><a href="#">Item3</a></li>
-					    	<li class="mui-table-view-cell"><a href="#">Item4</a></li>
-					    	<li class="mui-table-view-cell"><a href="#">Item5</a></li>
-					    </ul>
+				        <a class="mui-control-item rxfw-ca">
+				            <img style="width:200px;" src="img/qyxq_a.jpg" />
+				            <p class="qyxq-p">公司注册/知识产权/转开申请</p>
+				            <p class="qyxq-pp">¥1.0/起<span>1234人喜欢</span></p>
+				        </a>
+				        <a class="mui-control-item rxfw-ca">
+				          <img style="width:200px;" src="img/qyxq_a.jpg" />
+				          <p class="qyxq-p">公司注册/知识产权/转开申请</p>
+				          <p class="qyxq-pp">¥1.0/起<span>1234人喜欢</span></p>
+				        </a>
+				        <a class="mui-control-item rxfw-ca">
+				          <img style="width:200px;" src="img/qyxq_a.jpg" />
+				          <p class="qyxq-p">公司注册/知识产权/转开申请</p>
+				          <p class="qyxq-pp">¥1.0/起<span>1234人喜欢</span></p>
+				        </a>
+				        <a class="mui-control-item rxfw-ca">
+				          <img style="width:200px;" src="img/qyxq_a.jpg" />
+				          <p class="qyxq-p">公司注册/知识产权/转开申请</p>
+				          <p class="qyxq-pp">¥1.0/起<span>1234人喜欢</span></p>
+				        </a>
+				        <a class="mui-control-item rxfw-ca">
+				          <img style="width:200px;" src="img/qyxq_a.jpg" />
+				          <p class="qyxq-p">公司注册/知识产权/转开申请</p>
+				          <p class="qyxq-pp">¥1.0/起<span>1234人喜欢</span></p>
+				        </a>
+				        <a class="mui-control-item rxfw-ca">
+				          <img style="width:200px;" src="img/qyxq_a.jpg" />
+				          <p class="qyxq-p">公司注册/知识产权/转开申请</p>
+				          <p class="qyxq-pp">¥1.0/起<span>1234人喜欢</span></p>
+				        </a>
+				         <a class="mui-control-item rxfw-ca">
+				          <img style="width:200px;" src="img/qyxq_a.jpg" />
+				          <p class="qyxq-p">公司注册/知识产权/转开申请</p>
+				          <p class="qyxq-pp">¥1.0/起<span>1234人喜欢</span></p>
+				        </a>
+				        
+				    </div>
+				</div>	
+			</div>
+			<div class="qx-jiben">
+				<p class="jb-p">关于我们</p>
+				<div class="qyxa-jianj">
+					<img src="img/qyxq_gsjj.png" />
+					<div class="jj-pt">
+						<p class="xz-p">公司简介</p>
+						<p class="xz-pa">长顺企业—为创业者而生！秉承“待人以诚、持事以信、精益求精”的服务宗旨迎合“大众创业，万众创新”的时代浪潮，互联网+时代财税行业领跑者，专注于企业工商财税一条龙服务服务。更多免费公益活动等您来体验。</p>
+					</div>	
+				</div>
+				<div class="qyxa-jianj">
+					<img src="img/qyxq_ywjs.png" />
+					<div class="jj-pt">
+						<p class="xz-p">业务介绍</p>
+						<p class="xz-pa">公司主营业务：注册公司、记账报税、地址挂靠一般纳税人申请；商标申请及食品流通许可证和医疗器械经营备案许可、各项许可审批、企业变更及金融服务等！长顺企业拥有逾百人的成熟、专业、激情的资深运营管理团队！</p>
+					</div>	
+				</div>
+				<div class="qyxa-jianj" style="border-bottom: none;">
+					<img src="img/qyxq_fwal.png" />
+					<div class="jj-pt">
+						<p class="xz-p">服务案例</p>
+						<p class="xz-pa">内资公司注册，香港公司注册，外资公司注册<br />金牌公司记账报税，无地址申请一般纳税人<br />
+一类、二类、三类医疗器械经营许可备案<br />工商变更，股权转让<br />食品经营许可证、餐饮服务许可证、卫生许可证</p>
+					</div>	
+				</div>
+			</div>
+			<div class="qx-jiben">
+				<p class="jb-p">企业相关资讯<a href="#">更多 ></a></p>
+				<div class="more-n">
+					<a href="#">
+						<img src="img/qyxq_b.jpg" />
+					</a>
+					<div class="more-right">
+						<p><a href="#">奥森迪科新三板挂牌上市 2017年1-3月营 收241万元</a></p>
+						<div class="more-bot">
+							<span class="sa-la">2017-10-3</span>
+							<span class="sa-l">金融</span>
+							<span class="sa-l">推广</span>
+						</div>
+					</div>
+				</div>
+				<div class="more-n">
+					<a href="#">
+						<img src="img/qyxq_b.jpg" />
+					</a>
+					<div class="more-right">
+						<p><a href="#">奥森迪科新三板挂牌上市 2017年1-3月营 收241万元</a></p>
+						<div class="more-bot">
+							<span class="sa-la">2017-10-3</span>
+							<span class="sa-l">金融</span>
+						</div>
+					</div>
+				</div>
+				<div class="more-n">
+					<a href="#">
+						<img src="img/qyxq_b.jpg" />
+					</a>
+					<div class="more-right">
+						<p><a href="#">奥森迪科新三板挂牌上市 2017年1-3月营 收241万元</a></p>
+						<div class="more-bot">
+							<span class="sa-la">2017-10-3</span>
+							<span class="sa-l">金融</span>	
+						</div>
 					</div>
 				</div>
 			</div>
-			
-			
-		</header>
-		<div class="mui-content" style="background: #f8f8f8;">
-			<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="max-width:750px;height: 300px; margin: 0 auto;">
-			    <div class="mui-scroll">
-			        <a class="mui-control-item" style="width:210px;">
-			            <img style="width:200px;" src="img/qyxq_a.jpg" />
-			            <p class="qyxq-p">公司注册/知识产权/转开申请</p>
-			        </a>
-			        <a class="mui-control-item" style="width:210px;">
-			          <img style="width:200px;" src="img/qyxq_a.jpg" />
-			          <p class="qyxq-p">公司注册/知识产权/转开申请</p>
-			        </a>
-			        <a class="mui-control-item" style="width:210px;">
-			          <img style="width:200px;" src="img/qyxq_a.jpg" />
-			          <p class="qyxq-p">公司注册/知识产权/转开申请</p>
-			        </a>
-			        <a class="mui-control-item" style="width:210px;">
-			          <img style="width:200px;" src="img/qyxq_a.jpg" />
-			          <p class="qyxq-p">公司注册/知识产权/转开申请</p>
-			        </a>
-			        <a class="mui-control-item" style="width:210px;">
-			          <img style="width:200px;" src="img/qyxq_a.jpg" />
-			          <p class="qyxq-p">公司注册/知识产权/转开申请</p>
-			        </a>
-			        <a class="mui-control-item" style="width:210px;">
-			          <img style="width:200px;" src="img/qyxq_a.jpg" />
-			          <p class="qyxq-p">公司注册/知识产权/转开申请</p>
-			        </a>
-			         <a class="mui-control-item" style="width:210px;">
-			          <img style="width:200px;" src="img/qyxq_a.jpg" />
-			          <p class="qyxq-p">公司注册/知识产权/转开申请</p>
-			        </a>
-			        
-			    </div>
-			</div>	
+			<div class="qx-jiben" style="margin-bottom: 60px;">
+				<p class="jb-p">更多企业推荐</p>
+				<div class="jb-img">
+					<img src="img/qyxq_c.jpg" />
+				</div>
+				<div class="jb-img">
+					<img src="img/qyxq_c.jpg" />
+				</div>
+				<div class="jb-img">
+					<img src="img/qyxq_c.jpg" />
+				</div>
+				<div class="jb-img">
+					<img src="img/qyxq_c.jpg" />
+				</div>
+				<div class="jb-img">
+					<img src="img/qyxq_c.jpg" />
+				</div>
+				<div class="jb-img">
+					<img src="img/qyxq_c.jpg" />
+				</div>
+			</div>
 		</div>
+		<footer class="xq-foot">
+			<ul>
+				<li>
+					<div class="li-ce">
+						<a href="#">
+							<img src="img/qyxq_phone.png" />
+							<p>电话</p>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div class="li-ce">
+						<a href="#">
+							<img src="img/qyxq_home.png" />
+							<p>官网</p>
+						</a>
+					</div>
+				</li>
+				<li class="rl-li">
+					<a href="#">我要认领</a>
+				</li>
+			</ul>
+		</footer>
+		<script src="js/jquery-1.4.2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/mui.min.js" ></script>
 		
+		<script type="text/javascript">
+			document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   			});
+   			mui('.mui-scroll-wrapper').scroll()
+   			//点击顶部菜单按钮
+			$(".cc-b").click(function(){
+				if($(".cd_list").css("display")=="block"){
+					$(".cd_list").css("display","none");
+				}else if($(".cd_list").css("display")=="none"){
+					$(".cd_list").css("display","block");
+				}
+			});
+   		</script>
 	</body>
 </html>

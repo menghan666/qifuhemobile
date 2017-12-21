@@ -6,6 +6,7 @@
 		<title>办公场所</title>
 		<link rel="stylesheet" href="css/mui.min.css" />
 		<link rel="stylesheet" href="css/login.css" />	
+		<link rel="stylesheet" href="css/index.css" />
 		<script type="text/javascript" src="js/jquery-1.4.2.js" ></script>
 		<script type="text/javascript" src="js/shaixuan.js" ></script>
 		<script>
@@ -39,9 +40,37 @@
 					</div>
 				</div>
 				<div class="bg-topr">
-					<a href="#">
-						<img src="img/bg_c.png"  />
+					<a href="javacsript:void(0);" class="gs-a">
+						<img class="tr-img" src="img/bg_c.png"  />
 					</a>
+					<!--隐藏菜单列表-->
+					<ul class="cd_list" style="display:none; z-index: 999;">
+						<li>
+							<a class="#" href="#">
+								<img src="img/cd_home.png" alt="" />
+								<span>首页</span>
+							</a>
+						</li>
+						<li>
+							<a class="#" href="#">
+								<img src="img/cd_yj.png" alt="" />
+								<span>意见反馈</span>
+							</a>
+						</li>
+						<li>
+							<a class="#" href="#">
+								<img src="img/cd_help.png" alt="" />
+								<span>帮助中心</span>
+							</a>
+						</li>
+						<li>
+							<a class="#" href="#">
+								<img src="img/cd_wd.png" alt="" />
+								<span>我的</span>
+							</a>
+						</li>
+						
+					</ul>
 				</div>
 			</div>
 			<div class="bg-bom">
@@ -363,6 +392,16 @@
 				</div>
 			</div>
 		</div>
-		
+		<script type="text/javascript" src="js/mui.min.js" ></script>
+		<script type="text/javascript">
+			
+			$(".gs-a").click(function(){
+				if($(".cd_list").css("display")=="block"){
+					$(".cd_list").css("display","none");
+				}else if($(".cd_list").css("display")=="none"){
+					$(".cd_list").css("display","block");
+				}
+			});
+   		</script>
 	</body>
 </html>
