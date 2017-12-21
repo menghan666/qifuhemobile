@@ -1419,7 +1419,8 @@ p.qyxq-p{
 	border-bottom: 1px solid #f8f8f8;
 	text-align: center;
 	padding: 10px 0;
-	color: #999;
+	color: #333;
+	font-size: 0.9rem;
 }
 .qx-jiben ul li:nth-child(3){
 	width:33.3%;
@@ -1427,7 +1428,7 @@ p.qyxq-p{
 	border-right:none;
 	text-align: center;
 	padding: 10px 0;
-	color: #999;
+	color: #333;
 	border-bottom: 1px solid #f8f8f8;
 }
 .qx-jiben ul li:nth-child(4){
@@ -1436,7 +1437,7 @@ p.qyxq-p{
 	border-right:none;
 	text-align: center;
 	padding: 10px 0;
-	color: #999;
+	color: #333;
 	border-right: 1px solid #f8f8f8;
 	border-bottom: 1px solid #f8f8f8;
 }
@@ -1446,12 +1447,12 @@ p.qyxq-p{
 	border-right:none;
 	text-align: center;
 	padding: 10px 0;
-	color: #999;
+	color: #333;
 	border-right:none;
 	border-bottom: 1px solid #f8f8f8;
 }
 .qx-jiben ul li span{
-	color: #333333;
+	color: #999;
 }
 .rxfw-c{
 	max-width:750px;
@@ -1596,4 +1597,8 @@ p.xz-pa{
 }
 .xq-foot ul li.rl-li a{
 	color: #fff;
+}
+/*企业库底部导航*/
+.act_color span{
+	color:#2552d5 !important;
 }
