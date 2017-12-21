@@ -1374,8 +1374,8 @@ p.qyxq-p{
 .qyxq-top h1{
 	color: #333333;
 	line-height: 40px;
-	font-size: 1.1rem;
-	width: 260px;
+	font-size: 1.0rem;
+	display: table;
 	margin: 0px auto 0;
 	text-align: center;
 	padding-top: 60px;
@@ -1384,7 +1384,7 @@ p.qyxq-p{
 .qyxq-top h1{
 	color: #333333;
 	line-height: 40px;
-	font-size: 1.1rem;
+	font-size: 1.0rem;
 	width: 260px;
 	margin: 0px auto 0;
 	text-align: center;
@@ -1392,7 +1392,6 @@ p.qyxq-p{
 }
 }
 .qyxq-top h1 span{
-	width: 230px;
 	float: left;
 }
 .qyxq-top h1 img.h1-img{
