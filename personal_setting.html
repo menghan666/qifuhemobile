@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>设置</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/personal.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header class="header_box mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-pull-left cancel">取消</a>
+		    <h1 class="mui-title">设置</h1>
+		    <a class="cai_dan muea_btn float_rt"><img src="img/bg_ca.png"/></a>
+		    <!--隐藏菜单列表-->
+			<ul class="cd_list" style="display: none;">
+				<li>
+					<a class="#" href="#">
+						<img src="img/cd_home.png" alt="" />
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a class="#" href="#">
+						<img src="img/cd_yj.png" alt="" />
+						<span>意见反馈</span>
+					</a>
+				</li>
+				<li>
+					<a class="#" href="#">
+						<img src="img/cd_help.png" alt="" />
+						<span>帮助中心</span>
+					</a>
+				</li>
+				<li>
+					<a class="#" href="#">
+						<img src="img/cd_wd.png" alt="" />
+						<span>我的</span>
+					</a>
+				</li>
+			</ul>
+		</header>
+		<div class="set_list">
+			<div class="tel_box clearfix">
+				<img class="float_lf" src="img/tel.png" alt="" />
+				<p class="float_lf"><span>手机号</span><span class="tel_txt">已绑定<span>18534567890</span></span></p>
+				<a class="float_rt" href="#">修改</a>
+			</div>
+			<div class="tel_box pwd_box clearfix">
+				<img class="float_lf" src="img/pwd.png" alt="" />
+				<p class="float_lf"><span>密码</span><span class="pwd_txt">X123456578</span></p>
+				<a class="float_rt" href="#">修改</a>
+			</div>
+			
+			<div class="go_out"><a href="#">退出登录</a></div>
+		</div>
+		<script src="js/jquery-1.4.2.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			
+			$(document).ready(function(){
+				var H = $(document).height();
+				$(".set_list").height(H);
+				
+				//手机号中间四位用*号代替
+				var phone=$(".tel_txt span").html();  
+				var myphone=phone.substr(3,4);  //从第三位开始截取四位数
+				var lphone=phone.replace(myphone,"****");  
+				$(".tel_txt span").html(lphone);
+				
+				//密码用••••••代替
+				var pwd = $(".pwd_txt").html();
+				var pwds = phone.substring(0);
+				var new_pwd = pwds.replace(pwds,"••••••");
+				$(".pwd_txt").html(new_pwd);
+				
+				//点击顶部菜单按钮
+				$(".muea_btn").click(function(){
+					if($(".cd_list").css("display")=="block"){
+						$(".cd_list").css("display","none");
+					}else if($(".cd_list").css("display")=="none"){
+						$(".cd_list").css("display","block");
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>
