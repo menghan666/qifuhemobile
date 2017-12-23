@@ -552,8 +552,8 @@ p.qfh-zh a{
 	float: right;
 }
 .bg-top .bg-topra a.cc-b img{
-	width:90%;
-	margin-top: -10px;
+	width:70%;
+	margin-top: -14px;
 	float: right;
 }
 @media screen and (min-width:750px){
@@ -1194,11 +1194,11 @@ a.a-bq{
 }
 .paneaa img.fl-img{
 	width:100%;
-	margin: 15px auto 10px;
+	margin: 15px auto 0px;
 }
 .paneaa p.pan-p{
 	text-align: left;
-	line-height: 40px;
+	line-height: 50px;
 	font-size: 1.0rem;
 }
 .fenl-con{
@@ -1392,6 +1392,7 @@ p.qyxq-p{
 }
 }
 .qyxq-top h1 span{
+	max-width: 270px;
 	float: left;
 }
 .qyxq-top h1 img.h1-img{
