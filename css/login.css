@@ -639,7 +639,7 @@ p.bom-pa{
     right: 16%;
     top: 23px;
 }
-.pane{
+.panea{
 	width:100%;
 	border-top:0;
 	min-height: 600px;
@@ -848,7 +848,16 @@ p.bom-pa{
 	min-height: 100px;
 	height: auto;
 	overflow: hidden;
-	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	background: #fff;
+}
+.bg-con .bg-cona:last-child{
+	width:100%;
+	padding: 15px 2.5%;
+	min-height: 100px;
+	height: auto;
+	overflow: hidden;
+	border-bottom:none;
 	background: #fff;
 }
 .bg-con .bg-cona img{
@@ -1132,6 +1141,11 @@ a.a-bq{
 }
 .ss-jg p span{
 	color: #e61717;
+}
+.tj-p{
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #e5e5e5;
 }
 .ssjg-p{
 	width:95%;
@@ -1687,4 +1701,32 @@ p.xz-pa{
 /*企业库底部导航*/
 .act_color span{
 	color:#2552d5 !important;
+}
+/*我的关注*/
+.gs-zcma{
+	width:72%;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	text-align: center;
+	margin-top: 10px;
+}
+.gs-zcma p{
+	color: #333333;
+	font-size: 1.1rem;
+}
+.gs-zcra{
+	width:10%;
+	float: right;
+}
+.wdgz-top{
+	width:100%;
+	height: 60px;
+	line-height: 60px;
+	border-top: 1px solid #e5e5e5;
+	padding: 0 2.5%;
+}
+.wdgz-top .wdgz-topl{
+	width:50%;
+	float: left;
 }
