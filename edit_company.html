@@ -64,16 +64,14 @@
 			<div class="save_btn"><button type="submit">保存</button></div>
 		</form>
 		
-		
-		
 		<script src="js/jQuery.1.8.2.min.js"></script>
 		<script src="js/mui.min.js"></script>
 		<script src="js/uploadPreview.js"></script>
 		<script type="text/javascript">
 			mui.init()
 			$(document).ready(function(){
-				var H = $(document).height()-44;
-				$("#edit_content").height(H);
+				var H = $(document).height()-44;	
+				$("#edit_content").height(H+"px");
 			});
 			
 			//上传图片
@@ -125,7 +123,7 @@
 			
 			//点击顶部导航取消按钮
 			$(".nav_top").click(function(){
-				mui.confirm("确定放弃修改吗？","温馨	提示",['取消','确定'],function(e){
+				mui.confirm("确定放弃修改吗？","温馨提示",['取消','确定'],function(e){
 					if (e.index == 1) {
 					 	//点击确定按钮跳转
 						window.location= "http://www.baidu.com";

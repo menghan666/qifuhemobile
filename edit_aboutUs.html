@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>关于我们</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/personal.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!--顶部标题-->
+		<div class="back_top nav_top">
+			<a href="#" class="float_lf clearfix">
+				<span class="float_lf">取消</span>
+			</a>
+			<p class="">关于我们</p>
+		</div>
+		<form action="" id="edit_news" class="" onsubmit="return sub_btn();">
+			<!--公司简介-->
+			<div class="company_intro">
+				<div class="about_title clearfix">
+					<img class="float_lf" src="img/ab_com.png" alt="" />
+					<span class="float_lf">公司简介</span>
+				</div>
+				<textarea name="" rows="" cols=""></textarea>
+			</div>
+			<div class="company_intro">
+				<div class="about_title clearfix">
+					<img class="float_lf" src="img/ab_yewu.png" alt="" />
+					<span class="float_lf">业务介绍</span>
+				</div>
+				<textarea name="" rows="" cols=""></textarea>
+			</div>
+			<div class="company_intro">
+				<div class="about_title clearfix">
+					<img class="float_lf" src="img/ab_zuanshi.png" alt="" />
+					<span class="float_lf">服务案例</span>
+				</div>
+				<textarea name="" rows="" cols=""></textarea>
+			</div>
+			<div class="save_btn"><button type="submit">保存</button></div>
+		</form>
+		
+		<script src="js/jquery-1.4.2.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			$(document).ready(function(){
+				var H = $(document).height()-44;	
+				$("#edit_news").height(H+"px");
+			});
+			
+			function sub_btn(){
+				var isFrom = true;
+				var err_txt = "";
+				var textareas = $("#edit_news").find("textarea");
+				for(var i=0;i<textareas.length;i++){
+					if($(textareas[i]).val()==""){
+						err_txt+=$(textareas[i]).parent().children(".about_title").children("span").text();
+						isFrom=false;
+						break;
+					}
+				}
+				if(!isFrom){
+					mui.toast(err_txt+"不能为空！");
+					return false;
+				}else{
+					return true;
+				}
+			}
+			//点击顶部导航取消按钮
+			$(".nav_top").click(function(){
+				mui.confirm("确定放弃修改吗？","温馨提示",['取消','确定'],function(e){
+					if (e.index == 1) {
+					 	//点击确定按钮跳转
+						window.location= "http://www.baidu.com";
+                    } else {
+                    	//点击取消按钮
+                    }
+				},'div');
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>发布产品</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/personal.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!--顶部标题-->
+		<div class="back_top nav_top">
+			<a href="#" class="float_lf clearfix">
+				<span class="float_lf">取消</span>
+			</a>
+			<p class="">发布产品</p>
+		</div>
+		
+		<form action="" id="edit_product" class="" onsubmit="return sub_btn();">
+			<div class="mui-input-row">
+		        <label>产品标题</label>
+			    <input class="big_title" type="text" name="" id="" value="" />
+		    </div>
+		    <div class="mui-input-row">
+		        <label>副标题</label>
+			    <input class="xs_title" type="text" name="" id="" value="" />
+		    </div>
+		    <div class="mui-input-row pro_price">
+		        <label>产品价格</label>
+			    <input class="pr_input" type="text" name="" id="" value="" placeholder="￥"/>
+		    </div>
+		    <div class="mui-input-row">
+		        <label>产品链接</label>
+			    <input class="pro_link" type="text" name="" id="" value="" />
+		    </div>
+		    <div class="mui-input-row">
+		        <label>添加图片</label>
+		        <div class="add_box clearfix">
+		        	<div class="add_img float_lf">
+		        		<img id="pro_img"  src="" alt="" style="display: none;"/>
+		        	</div>
+		        	<div class="add_input float_lf">
+		        		<input id="add_btn" type="file" value="+">
+		        		<span>点击上传</span>
+		        	</div>
+		        	<p class="float_lf">请添加和产品相关图片</p>
+		        </div>
+		    </div>
+		    
+			<div class="save_btn"><button type="submit">保存</button></div>
+		</form>
+		
+		<script src="js/jQuery.1.8.2.min.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/uploadPreview.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			$(document).ready(function(){
+				var H = $(document).height()-44;	
+				$("#edit_product").height(H+"px");
+				
+			//上传图片
+			$("#add_btn").click(function(){
+				$("#pro_img").css("display","block");
+				$("#add_btn").uploadPreview({ Img: "pro_img", Width: 120, Height: 120 });
+			});
+			
+			});
+			
+			function sub_btn(){
+				if($(".big_title").val()==""){
+						mui.toast("产品标题不能为空！");
+						return false;
+				}else if($(".xs_title").val()==""){
+						mui.toast("副标题不能为空！");
+						return false;
+				}else if($(".pr_input").val()==""){
+						mui.toast("产品价格不能为空！");
+						return false;
+				}else if($(".pro_link").val()==""){
+						mui.toast("产品链接不能为空！");
+						return false;
+				}else if($("#pro_img").attr("src")==""){
+						mui.toast("产品图片不能为空！");
+						return false;
+				}else{
+					return true;
+				}
+			}
+		
+			//点击顶部导航取消按钮
+			$(".nav_top").click(function(){
+				mui.confirm("确定放弃修改吗？","温馨提示",['取消','确定'],function(e){
+					if (e.index == 1) {
+					 	//点击确定按钮跳转
+						window.location= "http://www.baidu.com";
+                    } else {
+                    	//点击取消按钮
+                    }
+				},'div');
+			});
+		</script>
+	</body>
+
+</html>

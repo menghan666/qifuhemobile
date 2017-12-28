@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>企业资讯</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/personal.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!--顶部标题-->
+		<div class="back_top nav_top">
+			<a href="#" class="float_lf clearfix">
+				<span class="float_lf">取消</span>
+			</a>
+			<p class="">企业资讯</p>
+		</div>
+		<form action="" id="edit_product" class="" onsubmit="return sub_btn();">
+			<div class="mui-input-row">
+		        <label>新闻标题</label>
+			    <input class="news_title" type="text" name="" id="" value="" />
+		    </div>
+		    <div class="mui-input-row">
+		        <label>发布时间</label>
+			    <input class="push_time" type="date" name="" id="" value="" />
+		    </div>
+		    <div class="mui-input-row">
+		        <label>链接地址</label>
+			    <input class="news_link" type="text" name="" id="" value="" />
+		    </div>
+			<div class="save_btn"><button type="submit">保存</button></div>
+		</form>
+		
+		<script src="js/jQuery.1.8.2.min.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			$(document).ready(function(){
+				var H = $(document).height()-44;	
+				$("#edit_product").height(H+"px");
+			});
+			function sub_btn(){
+				if($(".news_title").val()==""){
+						mui.toast("新闻标题不能为空！");
+						return false;
+				}else if($(".push_time").val()==""){
+						mui.toast("发布时间不能为空！");
+						return false;
+				}else if($(".news_link").val()==""){
+						mui.toast("链接地址不能为空！");
+						return false;
+				}else{
+					return true;
+				}
+			}
+			//点击顶部导航取消按钮
+			$(".nav_top").click(function(){
+				mui.confirm("确定放弃修改吗？","温馨提示",['取消','确定'],function(e){
+					if (e.index == 1) {
+					 	//点击确定按钮跳转
+						window.location= "http://www.baidu.com";
+                    } else {
+                    	//点击取消按钮
+                    }
+				},'div');
+			});
+		</script>
+	</body>
+
+</html>
