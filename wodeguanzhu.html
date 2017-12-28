@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/login.css" />	
 		<link rel="stylesheet" href="css/index.css" />
 		<script type="text/javascript" src="js/jquery-1.4.2.js" ></script>
+		<script type="text/javascript" src="js/shaixuan.js" ></script>
 		<script type="text/javascript">
 			document.addEventListener('plusready', function(){
    			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
@@ -34,7 +35,38 @@
 			<div class="bg-con">
 				<div class="wdgz-top">
 					<div class="wdgz-topl">
-						全部分类
+						<ul class="mui-table-view">
+						    <li class="mui-table-view-cell mui-collapse">
+						        <a class="mui-navigate-right" style="padding-left: 3%; background: #fff;" href="javascript:void(0);">全部分类</a> 
+						        <div class="mui-collapse-content" style="min-height: 700px; height: auto; overflow: hidden;">
+						        	<div style="min-height:80px; height: auto; overflow: hidden; background:#fff;">
+							        <p class="p-xz"><a href="#">全部分类<img src="img/fl_dg.png" /></a></p>
+							        <p><a href="#">办公场所（10）</a></p>
+							        <p><a href="#">企业采购（5）</a></p>
+							        <p><a href="#">工商财税（15）</a></p>
+							        <p><a href="#">人资管理（15）</a></p>
+							        <p><a href="#">知识产权（15）</a></p>
+							        <p><a href="#">项目申报（11）</a></p>
+							        <p><a href="#">企业培训（15）</a></p>
+							        <p><a href="#">技术开发（11）</a></p>
+						        </div>
+						       </div>
+						    </li>
+						</ul>
+					</div>
+					<div class="wdgz-topr">
+						<a href="javascript:void(0);">
+							<img src="img/wdgz_ss.png" />
+						</a>
+					</div>
+					<div class="ss-tk">
+						<div class="ss-tkl">
+							<img src="img/wdgz_ss.png" />
+							<input type="text" name="" id="" value="" placeholder="搜索已关注的企业" />
+						</div>
+						<div class="ss-tkr">
+							<a href="#">取消</a>
+						</div>
 					</div>
 				</div>
 				<div class="bg-cona">
@@ -141,7 +173,6 @@
 						<p>1亿注册资本 | 成立20年 | 500-1000人</p>
 					</div>
 				</div>
-				
 				<div class="bg-cona">
 					<a href="#"><img src="img/bg_a.jpg" /></a>
 					<div class="bg-conb">
@@ -180,11 +211,9 @@
 						</ul>
 						<p>1亿注册资本 | 成立20年 | 500-1000人</p>
 					</div>
-				</div>
-				
+				</div>	
 			</div>
 		</div>
 		<script type="text/javascript" src="js/mui.min.js" ></script>
-		
 	</body>
 </html>
