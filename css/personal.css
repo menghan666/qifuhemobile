@@ -290,6 +290,7 @@
 }
 .upload_photo{
 	width: 80%;
+	max-width: 300px;
 	height: 200px;
 	margin: 30px auto;
 	border:1px dashed #ccc;
@@ -694,7 +695,7 @@
 .cd_list li:first-child a{
 	border-top: none;
 }
-.cd_list li a img{
+.myCom_top .cd_list li a img{
 	position: absolute;
 	top:2px;
 	left: 4px;
@@ -1208,7 +1209,9 @@ p.qyxq-pp span{
 .big_wid .select_box div{
 	width: 50% !important;
 }
-
+.big_wid .select_box p{
+	margin-top: 7px;
+}
 /****************发布产品****************/
 #edit_product,#edit_news{
 	max-width: 750px;

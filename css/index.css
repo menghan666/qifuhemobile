@@ -73,12 +73,18 @@ p{
 /*搜索弹框页面*/
 .search_abox{
 	width: 100%;
+	max-width: 750px;
 	padding: 15px;
 	background-color: #fff;
 	position: fixed;
 	top:0;
 	left:0;
 	z-index: 100;
+}
+@media only screen and (min-width: 750px) {
+	.search_abox{
+		left:9px;
+	}
 }
 .search_input{
 	height: 34px;
