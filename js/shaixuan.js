@@ -84,3 +84,22 @@ function add_imgd(obj,radio){
 		document.getElementById(radio).checked = true;
 	}
 }
+$(function () {
+    H_login = {};
+    H_login.openLogin = function(){
+        $('.wdgz-topr a').click(function(){
+            $('.ss-tk').show();
+        });
+    };
+    H_login.closeLogin = function(){
+        $('.ss-tkr a').click(function(){
+            $('.ss-tk').hide();
+        });
+    };
+    
+    H_login.run = function () {
+        this.closeLogin();
+        this.openLogin();
+    };
+    H_login.run();
+});
