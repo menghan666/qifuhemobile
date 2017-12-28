@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>公司主页修改</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/personal.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!--顶部标题-->
+		<div class="back_top nav_top">
+			<a href="#" class="float_lf clearfix">
+				<span class="float_lf">取消</span>
+			</a>
+			<p class="">修改</p>
+		</div>
+		
+		<form action="" id="edit_content" onsubmit="return sub_btn();">
+			<!--修改头像-->
+			<div class="upload_img mui-row">
+				<div class="mui-col-xs-3 mui-col-sm-2">企业头像</div>
+				<div class="mui-col-xs-3 mui-col-sm-3"><img id="header_img" src="img/qy_logoa.png"/></div>
+				<div class="mui-col-xs-6 mui-col-sm-6">
+					<p class="clearfix">
+						<img class="float_lf" src="img/upload.png"/>  
+						<span class="float_lf"> &nbsp;点击上传</span>
+					</p>
+					<input type="file" id="up" />
+				</div>
+			</div>
+			<!--品牌名称-->
+			<div class="pro_name form_input mui-row">
+				<p class="mui-col-xs-3 mui-col-sm-2 name_p">品牌名称</p>
+				<p class="mui-col-xs-9 mui-col-sm-10">
+					<input type="text" name="" id="" value="" placeholder="请输入品牌名称"/>
+				</p>
+			</div>
+			<!--企业全称-->
+			<div class="com_names form_input mui-row">
+				<p class="mui-col-xs-3 mui-col-sm-2 name_p">企业全称</p>
+				<p class="mui-col-xs-9 mui-col-sm-10">
+					<input type="text" name="" id="" value="" placeholder="请输入企业全称"/>
+				</p>
+			</div>
+			<!--企业标签-->
+			<div class="com_tab mui-row">
+				<p class="mui-col-xs-3 mui-col-sm-2 name_p">企业标签</p>
+				<p class="mui-col-xs-6 mui-col-sm-7">
+					<input type="text" name="" id="wited_tab" value="" placeholder="输入标签名"/>
+					<a class="add_comTab" href="javascript:;">+</a>
+				</p>
+				<p class="mui-col-xs-3 mui-col-sm-3 font-12">最多10个标签</p>
+			</div>
+			
+			<div class="tabs_box mui-row">
+				<!--占格-->
+				<p class="mui-col-xs-3 mui-col-sm-2"></p>
+				<!--新建标签-->
+				<div class="mui-col-xs-8 mui-col-sm-8 tab_list mui-row"></div>
+			</div>
+			
+			<div class="save_btn"><button type="submit">保存</button></div>
+		</form>
+		
+		
+		
+		<script src="js/jQuery.1.8.2.min.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/uploadPreview.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			$(document).ready(function(){
+				var H = $(document).height()-44;
+				$("#edit_content").height(H);
+			});
+			
+			//上传图片
+			$("#up").uploadPreview({ Img: "header_img", Width: 120, Height: 120 });
+			
+			//添加标签
+			$(".add_comTab").click(function(){
+				var new_tab = $("#wited_tab").val();
+				//判断是否输入了标签名
+				if(new_tab ==""){
+					mui.toast("请填写标签名称！");
+				}else{
+					var new_p = $("<p class='mui-col-xs-5 mui-col-sm-5 txt-num1'></p>");
+					var del_a = $("<a href='javascript:;'><img src='img/del_tab.png'/></a>");
+					//获取标签个数 并限制在10个以内
+					var p_num = $(".tab_list p").length;
+					if(p_num >= 10){
+						mui.toast("最多10个标签！");
+					}else{
+						new_p.html(new_tab);
+						new_p.append(del_a);
+						$(".tab_list").append(new_p);
+						//成功创建后清空输入框
+						$("#wited_tab").val("");
+					}
+				}
+			});
+			
+			//删除新建标签按钮
+			$(".tab_list").on("click","a",function(){
+				$(this).parent().remove();
+			});
+
+			//验证品牌名称和企业名称不能为空
+			function sub_btn(){
+				//若当前input为空，则alert提醒 
+				if($(".pro_name p input").val() == ""){
+					var label = $(".pro_name p input").parent().siblings("p");
+					mui.toast(label.html() + "不能为空");
+					return false;
+				}else if($(".com_names p input").val() == ""){
+					var label = $(".com_names p input").parent().siblings("p");
+					mui.toast(label.html() + "不能为空");
+					return false;
+				}else{
+					return true;
+				}
+			}
+			
+			//点击顶部导航取消按钮
+			$(".nav_top").click(function(){
+				mui.confirm("确定放弃修改吗？","温馨	提示",['取消','确定'],function(e){
+					if (e.index == 1) {
+					 	//点击确定按钮跳转
+						window.location= "http://www.baidu.com";
+                    } else {
+                    	//点击取消按钮
+                    }
+				},'div');
+			});
+		</script>
+	</body>
+
+</html>

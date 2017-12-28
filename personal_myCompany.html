@@ -14,19 +14,296 @@
 		<!--顶部标题-->
 		<div class="back_top myCom_top">
 			<div class="blue_bg">
-				<a href="#" class="float_lf clearfix">
-					<img class="float_lf" src="img/bg_fh.png" alt="" />
-					<span class="float_lf color-fff">返回</span>
-				</a>
+				<div class="fixed_box">
+					<a href="#" class="float_lf back_nav clearfix">
+						<img class="float_lf" src="img/bg_fh.png" alt="" />
+						<span class="float_lf color-fff">返回</span>
+					</a>
+					<!--菜单按钮-->
+					<a href="javascript:;" class="muea_btn float_rt">
+						<img src="img/cai_dan.png" alt="" />
+					</a>
+					<!--关注-->
+					<a href="javascript:;" class="guan_zhu float_rt">
+						<!--未关注图标-->
+						<img src="img/guan_zhu.png" alt="" />
+						<!--已关注图标-->
+						<!--<img src="img/qyxq_gz.png" alt="" />-->
+					</a>
+				</div>
+				<!--隐藏菜单列表-->
+				<ul class="cd_list" style="display: none;">
+					<li>
+						<a class="#" href="#">
+							<img src="img/cd_home.png" alt="" />
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a class="#" href="#">
+							<img src="img/cd_yj.png" alt="" />
+							<span>意见反馈</span>
+						</a>
+					</li>
+					<li>
+						<a class="#" href="#">
+							<img src="img/cd_help.png" alt="" />
+							<span>帮助中心</span>
+						</a>
+					</li>
+					<li>
+						<a class="#" href="#">
+							<img src="img/cd_wd.png" alt="" />
+							<span>我的</span>
+						</a>
+					</li>
+				</ul>
+				
 				<a href="#" class="color-fff nav_edit">编辑</a>
+				<!--粉丝、浏览量 未认证不显示-->
+				<!--<div class="fans_look clearfix">
+					<div class="fans_box float_lf">
+						<p>粉丝</p>
+						<p>188</p>
+					</div>
+					<div class="look_num float_lf">
+						<p>浏览数</p>
+						<p>1888</p>
+					</div>
+				</div>-->
 			</div>
 		</div>
 		<div class="myCom_title">
 			<img class="myCom_logo" src="img/qy_logoa.png"/>
 			<p class="myCom_name clearfix">
-				<span class="float_lf txt-num1">鸟哥笔记/北京鸟哥笔记有限公司鸟哥笔记</span>
+				<span class="float_lf txt-num1">北京鸟哥笔记有限公司鸟哥笔记</span>
+				<!--未认证图标-->
 				<img class="float_lf" src="img/renzheng2.png"/>
+				<!--已认证图标-->
+				<!--<img class="float_lf" src="img/renzheng1.png"/>-->
 			</p>
+			<!--没有标签显示添加按钮-->
+			<a class="add_tabs edit_btn" href="#">+ 添加标签</a>
+			
+			<!--企业标签-->
+			<!--<div class="myCom_tabs">
+				<a href="#">公司注册</a>
+				<a href="#">公司注册</a>
+				<a href="#">公司注册</a>
+				<a href="#">公司注册</a><br/>
+				<a href="#">公司注册</a>
+				<a href="#">公司注册</a>
+				<a href="#">公司注册</a>
+				<a href="#">公司注册</a>
+				<a href="#">公司注册</a>
+			</div>-->
+			
+		</div>
+		<!--基本信息-->
+		<div class="basic_info">
+			<div class="module_title clearfix">
+				<p class="float_lf">基本信息</p>
+				<a class="float_rt edit_btn" href="#">编辑</a>
+			</div>
+			<div class="info_boxs">
+				<div class="com_lists clearfix">
+					<p class="float_lf">所在地区</p>
+					<div class="float_lf">北京</div>
+				</div>
+				<div class="com_lists clearfix">
+					<p class="float_lf">主营业务</p>
+					<div class="float_lf">网络销售</div>
+				</div>
+				<div class="com_lists clearfix">
+					<p class="float_lf">公司规模</p>
+					<div class="float_lf">500-1000人</div>
+				</div>
+				<div class="com_lists clearfix">
+					<p class="float_lf">注册时间</p>
+					<div class="float_lf">2018年10月26日</div>
+				</div>
+				<div class="com_lists rong_zi clearfix">
+					<p class="float_lf">融资金额</p>
+					<div class="float_lf">2000万</div>
+					<p class="float_rt rz_time">2017.11.15</p>
+				</div>
+				<div class="com_lists clearfix">
+					<p class="float_lf">联系电话</p>
+					<div class="float_lf">400-023-1111</div>
+				</div>
+				<div class="com_lists clearfix">
+					<p class="float_lf">公司官网</p>
+					<div class="float_lf">www.ngbj.com</div>
+				</div>
+			</div>
+		</div>
+		<!--热销服务-->
+		<div class="hot_service">
+			<div class="module_title clearfix">
+				<p class="float_lf clearfix">
+					<span class="float_lf">热销服务</span> 
+					<img class="float_lf" src="img/qyxq_rx.png"/>
+				</p>
+				<a class="float_rt edit_btn" href="#">发布产品</a>
+			</div>
+			
+			<!--暂无产品-->
+			<div class="com_pro">
+				<img src="img/nothing.png"/>
+				<p>暂无产品</p>
+			</div>
+			
+			<!--横向滚动-->
+			<!--<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted rxfw-c">
+				    <div class="mui-scroll">
+				        <a class="mui-control-item rxfw-ca">
+				            <img style="width:200px;" src="img/qyxq_a.jpg" />
+				            <p class="qyxq-p txt-num1">公司注册/知识产权/转开申请</p>
+				            <p class="qyxq-pp">¥1.0/起<span>1234人喜欢</span></p>
+				        </a>
+				        <a class="mui-control-item rxfw-ca">
+				          <img style="width:200px;" src="img/myCom_bg.png" />
+				          <p class="qyxq-p txt-num1">公司注册/知识产权/转开申请</p>
+				          <p class="qyxq-pp">¥1112.0/起<span>1234人喜欢</span></p>
+				        </a>
+				        <a class="mui-control-item rxfw-ca">
+				          <img style="width:200px;" src="img/qyxq_b.jpg" />
+				          <p class="qyxq-p txt-num1">公司注册/知识产权/转开申请</p>
+				          <p class="qyxq-pp">¥1112.0/起<span>1234人喜欢</span></p>
+				        </a>
+				        <a class="mui-control-item rxfw-ca">
+				          <img style="width:200px;" src="img/qyxq_a.jpg" />
+				          <p class="qyxq-p txt-num1">公司注册/知识产权/转开申请</p>
+				          <p class="qyxq-pp">¥1.0/起<span>1234人喜欢</span></p>
+				        </a>
+				        <a class="mui-control-item rxfw-ca">
+				          <img style="width:200px;" src="img/qyxq_a.jpg" />
+				          <p class="qyxq-p txt-num1">公司注册/知识产权/转开申请</p>
+				          <p class="qyxq-pp">¥1112.0/起<span>1234人喜欢</span></p>
+				        </a>
+				        <a class="mui-control-item rxfw-ca">
+				          <img style="width:200px;" src="img/qyxq_a.jpg" />
+				          <p class="qyxq-p txt-num1">公司注册/知识产权/转开申请</p>
+				          <p class="qyxq-pp">¥1.0/起<span>1234人喜欢</span></p>
+				        </a>
+				         <a class="mui-control-item rxfw-ca">
+				          <img style="width:200px;" src="img/qyxq_a.jpg" />
+				          <p class="qyxq-p txt-num1">公司注册/知识产权/转开申请</p>
+				          <p class="qyxq-pp">¥1112.0/起<span>1234人喜欢</span></p>
+				        </a>    
+				    </div>
+				</div>	-->
+		</div>
+		<!--关于我们-->
+		<div class="about_us">
+			<div class="module_title clearfix">
+				<p class="float_lf">关于我们</p>
+				<a class="float_rt edit_btn" href="#">编辑</a>
+			</div>
+			<div class="au_info">
+				<div class="au_box clearfix">
+					<div class="au_img float_lf"><img src="img/qyxq_gsjj.png"/></div>
+					<div class="au_txt float_lf">
+						<p>公司简介</p>
+						<p>长顺企业—为创业者而生！秉承“待人以诚、持事以信、精益求精”的服务宗旨迎合“大众创业，万众创新”的时代浪潮，互联网+时代财税行业领跑者，专注于企业工商财税一条龙服务服务。更多免费公益活动等您来体验。</p>
+					</div>
+				</div>
+				<div class="au_box clearfix">
+					<div class="au_img float_lf"><img src="img/qyxq_ywjs.png"/></div>
+					<div class="au_txt float_lf">
+						<p>业务介绍</p>
+						<p>公司主营业务：注册公司、记账报税、地址挂靠一般纳税人申请；商标申请及食品流通许可证和医疗器械经营备案许可、各项许可审批、企业变更及金融服务等！长顺企业拥有逾百人的成熟、专业、激情的资深运营管理团队！</p>
+					</div>
+				</div>
+				<div class="au_box clearfix">
+					<div class="au_img float_lf"><img src="img/qyxq_fwal.png"/></div>
+					<div class="au_txt float_lf">
+						<p>服务案例</p>
+						<p>内资公司注册，香港公司注册，外资公司注册金牌公司记账报税，无地址申请一般纳税人一类、二类、三类医疗器械经营许可备案工商变更，股权转让食品经营许可证、餐饮服务许可证、卫生许可证</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--企业资讯-->
+		<div class="company_news">
+			<div class="module_title clearfix">
+				<p class="float_lf">企业相关资讯</p>
+				<a class="float_rt del_btn" href="javascript:;">删除</a>
+			</div>
+			
+			<ul class="news_content">
+				<li class="news_list clearfix">
+					<div class="check_btn float_lf"><input type="checkbox" name="1" id="" value="" /></div>
+					<div class="news_info float_lf">
+						<p class="news_title">奥森迪科新三板挂牌上市 2017年1-3月营收241万元</p>
+						<p class="time_edit clearfix">
+							<span class="float_lf">2017-10-03</span>
+							<a class="float_rt" href="#">编辑</a>
+						</p>
+						
+					</div>
+				</li>
+				<li class="news_list clearfix">
+					<div class="check_btn float_lf"><input type="checkbox" name="2" id="" value="" /></div>
+					<div class="news_info float_lf">
+						<p class="news_title">奥森迪科新三板挂牌上市 2017年1-3月营收241万元</p>
+						<p class="time_edit clearfix">
+							<span class="float_lf">2017-10-03</span>
+							<a class="float_rt" href="#">编辑</a>
+						</p>
+						
+					</div>
+				</li>
+				<li class="news_list clearfix">
+					<div class="check_btn float_lf"><input type="checkbox" name="3" id="" value="" /></div>
+					<div class="news_info float_lf">
+						<p class="news_title">奥森迪科新三板挂牌上市 2017年1-3月营收241万元</p>
+						<p class="time_edit clearfix">
+							<span class="float_lf">2017-10-03</span>
+							<a class="float_rt" href="#">编辑</a>
+						</p>
+					</div>
+				</li>
+				<li class="news_list clearfix">
+					<div class="check_btn float_lf"><input type="checkbox" name="4" id="" value="" /></div>
+					<div class="news_info float_lf">
+						<p class="news_title">奥森迪科新三板挂牌上市 2017年1-3月营收241万元</p>
+						<p class="time_edit clearfix">
+							<span class="float_lf">2017-10-03</span>
+							<a class="float_rt" href="#">编辑</a>
+						</p>
+					</div>
+				</li>
+				
+				<a class="add_btns" href="#">+ 添加资讯</a>
+			</ul>
+			
+		</div>
+		<!--更多企业推荐-->
+		<div class="recommend_company">
+			<div class="module_title clearfix">
+				<p class="float_lf">更多企业推荐</p>
+			</div>
+			<ul class="mui-row">
+				<li class="mui-col-xs-4 mui-col-sm-4">
+					<a href="#"><img src="img/qyxq_b.jpg"/></a>
+				</li>
+				<li class="mui-col-xs-4 mui-col-sm-4">
+					<a href="#"><img src="img/qyxq_b.jpg"/></a>
+				</li>
+				<li class="mui-col-xs-4 mui-col-sm-4">
+					<a href="#"><img src="img/qyxq_c.jpg"/></a>
+				</li>
+				<li class="mui-col-xs-4 mui-col-sm-4">
+					<a href="#"><img src="img/qyxq_c.jpg"/></a>
+				</li>
+				<li class="mui-col-xs-4 mui-col-sm-4">
+					<a href="#"><img src="img/qyxq_c.jpg"/></a>
+				</li>
+				<li class="mui-col-xs-4 mui-col-sm-4">
+					<a href="#"><img src="img/qyxq_c.jpg"/></a>
+				</li>
+			</ul>
 		</div>
 		
 		
@@ -34,6 +311,39 @@
 		<script src="js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init()
+			
+			//滚动条向下滚动时顶部导航栏悬浮
+//			$(document).scroll(function(){
+//				var top = $(document).scrollTop();
+//				if(top>=10){
+//					$(".fixed_box").addClass("fixeds");
+//					$(".back_nav img").attr("src","img/login_fh.png");
+//					$(".muea_btn img").attr("src","img/bg_ca.png");
+//				}else if(top<=10){
+//					$(".fixed_box").removeClass("fixeds");
+//				}
+//			});
+			
+			//点击顶部菜单按钮
+			$(".muea_btn").click(function(){
+				if($(".cd_list").css("display")=="block"){
+					$(".cd_list").css("display","none");
+				}else if($(".cd_list").css("display")=="none"){
+					$(".cd_list").css("display","block");
+				}
+			});
+			
+			//企业资讯删除选中新闻
+			$(".del_btn").click(function(){
+				$(".check_btn input:checked").parent().parent().remove();
+			});
+			
+			//更多企业推荐图片高度  宽高比为4:3
+			$(document).ready(function(){
+				var w = $(".recommend_company ul li a img").width();
+				var h = w*(3/4);
+				$(".recommend_company ul li a img").height(h);
+			});
 		</script>
 	</body>
 

@@ -256,6 +256,7 @@
 	display: inline-block;
 	height: 44px;
 	font-size: 16px;
+	color:#333 !important;
 }
 .back_top a img{
 	width: 10px;
@@ -638,9 +639,12 @@
 
 /*******************我的公司********************/
 .myCom_top{
-	height: 160px;
+	height: 180px;
+	max-width: 750px;
+	margin: 0 auto;
 	background: url(../img/myCom_bg.png) center 0 no-repeat;
 	background-size: 100%;
+	position: relative;
 }
 .blue_bg{
 	width: 100%;
@@ -649,34 +653,99 @@
 	position: relative;
 	background-color: rgba(132,153,223,0.8);
 }
+.muea_btn{
+	padding: 20px 10px;
+	height: auto !important; 
+}
+.muea_btn img{
+	display: block;
+	width:30px !important;
+	margin: 0 !important;
+}
+.guan_zhu{
+	padding: 15px 10px;
+	height: auto !important; 
+}
+.guan_zhu img{
+	display: block;
+	width:20px !important;
+	margin: 0 !important;
+}
+.cd_list{
+	width: 150px;
+	position: absolute;
+	top:30px;
+	right: 10px;
+	z-index: 100;
+	display: block;
+	box-sizing: border-box;
+	padding: 15px 20px;
+	background: url(../img/cd_bg.png) center no-repeat;
+	background-size: 100% 100%;
+}
+
+.cd_list li a{
+	position: relative;
+	display: block;
+	line-height: 24px;
+	padding: 10px 0 5px 0;
+	border-top: 1px solid #e5e5e5;
+}
+.cd_list li:first-child a{
+	border-top: none;
+}
+.cd_list li a img{
+	position: absolute;
+	top:2px;
+	left: 4px;
+	width: 22px;
+	max-height: 24px;
+}
+.cd_list li a span{
+	font-size: 14px;
+	margin-left: 40px;
+	padding-top: 14px !important;
+}
 .nav_edit{
 	position: absolute;
 	right:15px;
-	bottom: 40px;
+	bottom: 60px;
 	padding: 5px;
 	height: auto !important;
 }
+.fans_look{
+	width: auto !important;
+	position: absolute;
+	bottom:5px;
+	right:20px;
+}
+.fans_box p,.look_num p{
+	color:#fff;
+	margin-right: 10px;
+	text-align: center;
+}
+	
 .myCom_title{
 	width: 100%;
 	max-width: 750px;
+	/*height: 180px;*/
 	margin: 0 auto;
-	position: relative;
 	background-color: #fff;
 	border:1px solid transparent; 
 }
 .myCom_title .myCom_logo{
 	width: 100px;
 	height: 100px;
-	position: absolute;
-	top:-50px;
-	left: 38%;
+	position: relative;
+	z-index: 10px;
+	margin: -50px auto 0 auto; 
 }
 .myCom_name {
 	display: table;
-	height: 30px;
-	margin: 70px auto;
+	margin: 20px auto 0 auto;
 }
 .myCom_name span{
+	max-width: 240px;
 	font-size: 16px;
 	color:#333;
 }
@@ -685,13 +754,393 @@
 	height: 20px;
 	margin: 2px 0 0 5px;
 }
+.myCom_title .add_tabs{
+	display: block;
+	width: 100px !important;
+	height: auto !important;
+	padding: 10px 0;
+	border:1px solid #e5e5e5;
+	border-radius: 5px;
+	text-align: center;
+	margin: 20px auto;
+}
+.myCom_tabs{
+	width: 90%;
+	text-align: center;
+	margin: 10px auto;
+}
+.myCom_tabs a{
+	display: inline-block;
+	padding: 0 4px;
+	height: 24px;
+	margin:5px 0;
+	font-size: 12px;
+	border:1px solid #e5e5e5;
+	border-radius: 12px;
+	background-color: #f8f8f8;
+}
+.basic_info,.hot_service,.about_us,.company_news,.recommend_company{
+	max-width: 750px;
+	margin: 10px auto 0 auto;
+	background-color: #fff;
+	padding: 0 10px;
+	border:1px solid transparent;
+}
+.module_title p{
+	color:#333;
+	font-size: 16px;
+	padding-left: 5px;
+	margin: 20px 0 0 0;
+	border-left:4px solid #2552d5;
+}
+.module_title a{
+	display: block;
+	color:#2552d5;
+	font-size: 16px;
+	padding: 20px 0 0 10px;
+}
+.com_lists{
+	border-top: 1px solid #e5e5e5;
+}
+.com_lists:first-child{
+	border-top:none;
+}
+.com_lists p{
+	width: 20%;
+	padding: 15px 0;
+	text-align: left;
+}
+.com_lists div{
+	width: 80%;
+	padding: 15px 0;
+	text-align: left;
+}
+.rong_zi div{
+	width: 50%;
+}
+.rong_zi .rz_time{
+	width: 30%;
+	text-align: right;
+}
+.hot_service{
+	border:1px solid transparent;
+}
+.hot_service .module_title p img{
+	width: 20px;
+	margin: 2px 0 0 5px;
+}
+.com_pro{
+	padding: 20px 0;
+	width: 100%;
+}
+.com_pro img{
+	display: block;
+	width: 50px;
+	margin: 10px auto;
+}
+.com_pro p{
+	color:#333;
+	text-align: center;
+}
+.rxfw-c{
+	max-width:750px;
+	min-height: 226px; 
+	height: auto;
+	overflow: hidden; 
+	margin: 20px auto;
+}
+.rxfw-ca{
+	width:200px !important;
+	padding: 0 !important;
+	margin-right: 10px;
+	background: #f8f8f8;
+}
+.rxfw-ca img{
+	height: 150px;
+}
+.rxfw-ca p{
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+.rxfw-ca p.qyxq-p{
+	color:#333;
+	text-align: left;
+	font-size: 16px;
+}
+p.qyxq-pp{
+	color: #ff9e00;
+	text-align: left;
+}
+p.qyxq-pp span{
+	color: #999999;
+	padding: 0 10px;
+}
+
+.au_info{
+	margin-top: 10px;
+}
+.au_box{
+	padding-bottom: 10px;
+	border-top: 1px solid #e5e5e5;
+}
+.au_box:first-child{
+	border-top: none;
+}
+.au_info .au_box div.au_img{
+	width: 20%;
+}
+.au_info .au_box div.au_img img{
+	width: 100%;
+	margin: 50% auto;
+}
+.au_info .au_box .au_txt{
+	width: 80%;
+	padding-left: 10px;
+}
+@media only screen and (min-width: 768px) {
+	.au_info .au_box div.au_img {
+	    width: 10%;
+	}
+	.au_info .au_box .au_txt{
+		width: 90%;
+	}
+	.au_info .au_box div.au_img img{
+		width: 100%;
+		margin: 30% auto;
+	}
+}
+.au_info .au_box .au_txt p{
+	color:#666;
+}
+.au_info .au_box .au_txt p:first-child{
+	color:#333;
+	font-size: 16px;
+	margin: 5px 0;
+}
+
+.company_news .del_btn{
+	color:#ff9e00;
+}
+.news_content {
+	border:1px solid transparent;
+}
+.news_content a.add_btns{
+	display: block;
+	padding: 10px 0;
+	width: 100px;
+	border:1px solid #e5e5e5;
+	border-radius: 5px;
+	margin: 30px auto;
+	text-align: center;
+}
+.news_list{
+	position: relative;
+	margin: 10px 0 0 0;
+}
+.news_list .check_btn{
+	width: 10%;
+	min-height: 60px;
+	text-align: center;
+}
+.news_list .check_btn input{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top:30%;
+	left: 0;
+	border:1px solid #e5e5e5;
+	background-color: #fff;
+}
+.news_info{
+	width: 90%;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.news_info p.news_title{
+	height: 42px;
+	color:#333;
+	font-size: 16px;
+}
+.news_info p.time_edit{
+	margin-top: 5px;
+}
+.news_info p.time_edit a{
+	color:#2552D5;
+}
+
+.recommend_company ul{
+	margin: 20px 0;
+}
+.recommend_company ul li a {
+	display: block;
+	padding: 5px;
+}
+.recommend_company ul li a img{
+	width: 100%;
+	display: block;
+	border:1px solid #e5e5e5;
+}
+
+.fixeds{
+	width: 100%;
+	height: 44px;
+	padding: 0 10px;
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 10000;
+	box-shadow: 0 0 5px 2px #ccc;
+	background-color: #fff;
+}
+.fixeds a span{
+	color:#333 !important;
+}
 
 
+/********************编辑企业头像、标签、名称***********************/
+#edit_content{
+	max-width: 750px;
+	padding:20px 10px;
+	margin: 0 auto;
+	background-color: #fff;
+	position: relative;
+}
+.upload_img{
+	margin-bottom: 15px;
+}
+.upload_img div{
+	/*height: 85px;*/
+}
+.upload_img div:first-child{
+	padding: 30px 0 0 0;
+	text-align: left;
+	color: #333;
+}
+.upload_img div:first-child+div img{
+	width: 75px;
+	height: 75px;
+	border:1px solid #e5e5e5;
+	border-radius: 5px;
+}
+.upload_img div:first-child+div+div{
+	position: relative;
+	height: 36px;
+	margin-top: 38px;
+}
+.upload_img div:first-child+div+div p{
+	display: block;
+	width: 100px;
+	text-align: center;
+	padding: 5px 5px;
+	border:1px solid #e5e5e5;
+	border-radius: 5px;
+	position: absolute;
+	left: 10px;
+	bottom:0;
+	z-index: 10;
+}
 
-
-
-
-
-
-
-
+.upload_img div:first-child+div+div p img{
+	width: 20px;
+	height:20px;
+	margin-left: 5px;
+}
+.upload_img div:first-child+div+div input{
+	display: block;
+	text-align: center;
+	width: 100px;
+	padding: 5px 5px;
+	border-radius: 5px;
+	border:none !important;
+	position: absolute;
+	left: 10px;
+	bottom:0;
+	z-index: 11;
+	opacity: 0;
+}
+.pro_name {
+	
+}
+.pro_name p:first-child,
+.com_names p:first-child,
+.com_tab p:first-child{
+	padding: 10px 0;
+	color:#333;
+}
+#edit_content div p input{
+	border-radius: 6px;
+} 
+.com_tab p:first-child+p+p{
+	padding: 10px 0;
+	color:#ff9e00;
+	text-align: right;
+}
+.com_tab p:first-child+p{
+	position: relative;
+}
+.com_tab p:first-child+p input{
+	display: inline-block;
+	width: 70%;
+	border-radius: 6px 0 0 6px !important;
+}
+.com_tab p:first-child+p a{
+	display: inline-block;
+	width: 30%;
+	height: 40px;
+	line-height: 0;
+	padding: 18px 0 0 0;
+	position: absolute;
+	top:0;
+	right: 0;
+	color:#fff;
+	font-size: 24px;
+	text-align: center;
+	border-radius: 0 6px 6px 0;
+	background-color: #2552d5;
+}
+.com_tab p:first-child+p a:hover{
+	color:#fff !important;
+}
+.tabs_box{
+	margin: 0 auto;
+}
+.save_btn{
+	width: 100%;
+	padding: 0 15px;
+}
+.save_btn button{
+	width: 100%;
+	padding: 5px 0;
+	color:#fff;
+	font-size: 18px;
+	background-color: #2552D5;
+	border:1px solid #2552D5;
+}
+.tab_list p{
+	padding: 8px 0;
+	text-align: center;
+	color:#333;
+	font-size: 16px;
+	border-radius: 6px;
+	margin: 0 10px 10px 0;
+	background-color: #f8f8f8;
+	overflow: hidden;
+	position: relative;
+}
+.tab_list p a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top:-11px;
+	right: -11px;
+}
+.tab_list p a img{
+	width: 100%;
+}
+.save_btn{
+	margin-top: 20px;
+}
+.mui-popup-button.mui-popup-button-bold{
+	font-weight: 300;
+}
