@@ -26,12 +26,16 @@
 			<div class="gs-zcma">
 				<p>产品（6）</p>
 			</div>
-			<div class="gs-zcra">
-				<a href="#" style="color: #2552d5;">删除</a>
-			</div>
 		</header>
 		<div class="mui-content" style="background: #fff;">
 			<div class="chanp-con">
+				<div class="btn_title clearfix">
+					<div class="choose_all clearfix">
+						<input type="checkbox" name="" id="" value="" />
+						<span>全选</span>
+					</div>
+					<a href="#" class="dels" style="color: #2552d5;">删除</a>
+				</div>
 				<div class="chanp-cona">
 					<div class="chan-left">
 						<input type="checkbox" name="" id="" value="" />
@@ -106,6 +110,40 @@
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="js/mui.min.js" ></script>	
+		<script type="text/javascript" src="js/mui.min.js" ></script>
+		<script>
+			$(document).ready(function(){
+				//点击删除按钮
+				$(".dels").click(function(){
+					var checkboxs = $(".chanp-cona input[type='checkbox']");
+					checkboxs.each(function(){
+						if($(this).attr("checked")==true){
+							$(this).parent().parent().remove();
+						}
+					});
+				});
+				//点击全选按钮
+				$(".choose_all input").click(function(){
+					console.log($(this).attr("checked"));
+					if($(this).attr("checked")==true){
+						$(".chanp-cona input[type='checkbox']").attr("checked",true);
+					}else{
+						$(".chanp-cona input[type='checkbox']").removeAttr("checked");
+						
+					}
+				});
+				
+				//如果复选框全部选中则全选按钮也选中 否则全选按钮取消选中
+				$(".chanp-cona input[type='checkbox']").click(function(){
+					var list_num = $(".chanp-cona input[type='checkbox']").length;
+					if($(".chanp-cona input[type='checkbox']:checked").length==list_num){
+						$(".choose_all input").attr("checked",true);
+					}else{
+						$(".choose_all input").removeAttr("checked");
+					}
+				});
+				
+			});
+		</script>
 	</body>
 </html>

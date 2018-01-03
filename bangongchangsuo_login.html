@@ -21,17 +21,15 @@
 					}
 				})
 				
+				//筛选点击其他区域隐藏弹框
 				$(".li-a").click(function(event){
 					event.stopPropagation();//阻止事件冒泡
-					//筛选点击其他区域隐藏弹框
 					var tag = $(".pane-ula");
-					var oks = true;
 					$(document).bind("click",function(e){
 						var target = $(e.target).attr("class");
 						if(target=="panea paneb"){
 							$(e.target).css("display","none");
 							$(".li-a").removeClass("hit");
-	            			oks = false;
 						}
 					});
 				});
