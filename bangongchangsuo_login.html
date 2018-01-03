@@ -11,11 +11,32 @@
 		<script type="text/javascript" src="js/shaixuan.js" ></script>
 		<script>
 			$(function(){	
-			$('.bg-nav ul li').click(function(){
-				$(this).addClass('hit').siblings().removeClass('hit');
-				$('.panes>div:eq('+$(this).index()+')').show().siblings().hide();	
+				$('.bg-nav ul li').click(function(){
+					if(!$(this).hasClass("hit")){
+						$(this).addClass('hit').siblings().removeClass('hit');
+						$('.panes>div:eq('+$(this).index()+')').show().siblings().hide();
+					}else{
+						$(this).removeClass('hit');
+						$('.panes>div:eq('+$(this).index()+')').hide();
+					}
+				})
+				
+				$(".li-a").click(function(event){
+					event.stopPropagation();//阻止事件冒泡
+					//筛选点击其他区域隐藏弹框
+					var tag = $(".pane-ula");
+					var oks = true;
+					$(document).bind("click",function(e){
+						var target = $(e.target).attr("class");
+						if(target=="panea paneb"){
+							$(e.target).css("display","none");
+							$(".li-a").removeClass("hit");
+	            			oks = false;
+						}
+					});
+				});
+//				
 			})
-		})
 		</script>
 		<script type="text/javascript">
 			document.addEventListener('plusready', function(){
@@ -132,7 +153,7 @@
 					</div>
 		            <div class="panea paneb">
 		            	<div class="pane-ula">
-		            		<form>
+		            		<form action="" method="">
 		            			<div class="sx-a">
 			            			<p>融资级别</p>
 			            			<div class="share-radio">

@@ -463,7 +463,7 @@ p.qfh-zh a{
 	width:100%;
 	min-height: 100px;
 	height: auto;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	background: url(../img/bg_banner.jpg) center 0 no-repeat;
 	background-size: 100% 100%;
 	max-width: 750px;
@@ -487,6 +487,7 @@ p.qfh-zh a{
 }
 .bg-top .bg-topl a{
 	color: #fff;
+	font-size: 16px;
 }
 .bg-top .bg-topm{
 	width: 70%;
@@ -535,10 +536,24 @@ p.qfh-zh a{
 	width:10%;
 	float: right;
 }
+.bg-top .bg-topr .gs-a{
+	display: block;
+	width: 100%;
+	height:100%;
+	border:1px solid transparent;
+}
 .bg-top .bg-topr img.tr-img{
 	width:100%;
 	display: block;
 	margin-top: 35px;
+}
+@media only screen and (min-width: 768px) {
+	.bg-top .bg-topr img.tr-img{
+		width:auto;
+		display: block;
+		margin: 0 auto;
+		margin-top: 35px;
+	}
 }
 .bg-top .bg-topra{
 	width:23%;
@@ -574,6 +589,7 @@ p.qfh-zh a{
 	height: auto;
 	overflow: hidden;
 	margin: 0 auto;
+	border: 1px solid transparent;
 }
 p.bom-p{
 	font-size: 1.3rem;
