@@ -2,7 +2,10 @@ body{
 	margin:0 auto; 
 	font-family: "Microsoft YaHei", "SimSun"; 
 	font-size: 1.0rem; 
-	background: #fff;}
+	background: #fff;
+	position: relative;
+	max-width: 750px;
+}
 *{ 
 	padding:0px; 
 	margin:0px;
@@ -1090,6 +1093,7 @@ a.a-bq{
 	max-width: 750px;
 	margin: 0 auto;
 	padding: 0 2.5%;
+	position: relative;
 }
 .zc-ts{
 	width:100%;
@@ -1146,6 +1150,13 @@ a.a-bq{
 	width: 80%;
 	float: right;
 	margin-top: 25px;
+}
+@media only screen and (min-width:750px) {
+	.gs-zc .gs-zcr img.zc-img{
+		width: 60%;
+		float: right;
+		margin-top: 25px;
+	}
 }
 .ss-jg{
 	width:100%;
